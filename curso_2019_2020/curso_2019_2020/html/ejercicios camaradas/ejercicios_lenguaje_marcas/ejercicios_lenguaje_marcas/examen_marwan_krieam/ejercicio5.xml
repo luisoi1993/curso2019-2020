@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/xmlschema">
+<xs:element name="peso" type="xs:decimal">
+<xs:simpletype>
+<xs:restriction base="xs:decimal">
+<xs:miniInclusive value="0"/>
+<xs:maxInclusive value="1000"/>
+</xs:restriction>
+</xs:simpletype>
+</xs:element>
+</xs:schema>

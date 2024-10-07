@@ -1,0 +1,66 @@
+# Hoja8_sol
+# En MySQL, establece como activa la base de datos PRACTICAS.
+# A partir de la tabla EMPLE, visualiza cuántos empleados tienen apellido empezando por ‘A’.
+SELECT COUNT(APELLIDO) FROM EMPLE WHERE APELLIDO LIKE ‘A%’;
+ 
+# Dada la tabla EMPLE, obtén el sueldo medio, el número de comisiones no nulas, 
+# el máximo sueldo y el mínimo sueldo de los empleados del departamento 30.
+SELECT AVG(SALARIO), COUNT(COMISION), MAX(SALARIO),MIN(SALARIO) 
+FROM EMPLE
+WHERE DEPT_NO = 30;
+
+# Visualiza el número de empleados de cada departamento cuyo oficio sea ‘EMPLEADO’.
+SELECT COUNT(*) FROM EMPLE
+WHERE OFICIO LIKE ‘EMPLEADO’
+GROUP BY DEPT_NO;
+
+# Busca los departamentos que tienen más de dos personas trabajando en la misma profesión.
+SELECT DEPT_NO, OFICIO, COUNT(*)
+FROM EMPLE
+GROUP BY DEPT_NO, OFICIO
+HAVING COUNT(*) >=2;
+
+# Obtener el número total de departamentos.
+SELECT COUNT(DEPT_NO) FROM DEPART;
+
+# Obtener el número total de departamentos que tienen empleados.
+SELECT COUNT(DISTINCT DEPT_NO) FROM EMPLE;
+
+# Obtener el número total de empleados del departamento 10 que son ANALISTAS.
+SELECT COUNT(EMP_NO) FROM EMPLE
+WHERE OFICIO LIKE 'ANALISTA' AND DEPT_NO=10;
+
+# Obtener, para cada oficio de la tabla EMPLE, el sueldo máximo y el sueldo mínimo, excluyendo los sueldos de los ANALISTAS.
+SELECT OFICIO, MAX(SALARIO), MIN(SALARIO)
+FROM EMPLE
+WHERE OFICIO NOT LIKE ‘ANALISTA’
+GROUP BY OFICIO;
+
+# Obtener los códigos de las asignaturas que tienen matriculados más de un alumno.
+SELECT COD FROM NOTAS
+GROUP BY COD
+HAVING COUNT(DNI) >=2;
+
+# Obtener el DNI de los alumnos aprobados en cualquier asignatura.
+SELECT DISTINCT DNI FROM NOTAS
+WHERE NOTA >= 5;
+
+# Obtener el número de alumnos aprobados en cada asignatura.
+SELECT COD, COUNT(DNI) FROM NOTAS
+WHERE NOTA>=5
+GROUP BY COD;
+
+# Obtener el DNI de los alumnos cuya nota esté comprendida entre 5 y 7.
+SELECT DNI FROM NOTAS 
+WHERE NOTA BETWEEN 5 AND 7;
+
+# Obtener la nota media de en cada asignatura.
+SELECT COD, AVG(NOTA) AS MEDIA
+FROM NOTAS
+GROUP BY COD;
+
+# Obtener los códigos de las asignaturas en las que sólo hay matriculados un alumno.
+SELECT COD, COUNT(DNI)
+FROM NOTAS
+GROUP BY COD
+HAVING COUNT(DNI) = 1;

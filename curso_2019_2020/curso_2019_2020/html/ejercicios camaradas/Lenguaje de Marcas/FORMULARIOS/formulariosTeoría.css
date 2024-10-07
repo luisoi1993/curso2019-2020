@@ -1,0 +1,25 @@
+/*Formularios*/
+
+/*Para crear os formularios se necesitan 2 etiquetas: */
+    <form></form> /* --> Que indicaque vamos a crear un Formulario*/
+    <input></input> /* --> Define el tipo de Formulario que queremos crear (Botones y Cuadros de Texto)/*
+
+/*La Etiqueta Form*/
+/*Es una Etiqueta de Bloque y sus principales atributos son: */
+    action = "URL" /* --> Que indica la dirección de Servidor que va a procesar los datos*/
+    method /* --> Define la forma en la que se enviarán los datos al servidor*/
+        -get --> method="get";
+        -post --> method="post";
+            post /* --> Permite eviar más cantidad de información que get. Post te permite enviar ficheros adjuntos
+                    y get no. Con get se añade la información a enviar al final de la URL*/
+    /* ¿Cuando se debe usar cada uno? --> Si la consulta no necesita modificar la información, como en una búsqueda se usa get.
+    Cuando el Formulario modifica la información, como en una consulta de inserccion, actualización o borrado se usa post.*/
+
+/*La Etiqueta Input*/
+/*Encierra los controles o campos del formulario. Sus atributos son: */
+    type = /* --> Su valor define el tipo de formulario que estamos creando*/
+    name = /* --> Asigna un nombre al control que es imprescindible para que el servidor pueda procesar la información.*/
+    value = /* --> Almacenará el valor inicial que se debe presentar*/
+
+/*Cuadros de Texto*/
+<form action="" method=""></form>/**/

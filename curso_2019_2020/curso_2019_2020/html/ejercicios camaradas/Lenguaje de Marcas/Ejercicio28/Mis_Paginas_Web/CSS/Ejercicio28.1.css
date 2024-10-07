@@ -1,0 +1,52 @@
+.prinivel {
+	font-family:Times New Roman;
+	font-size:1.5em;
+	color:#003B6F;
+	margin-left:0px;
+	margin-right:auto;
+}
+
+.tercnivel {
+	font-family:Corsiva,san-serif;
+	font-size:0.9em;
+	list-style-type:none;
+}
+
+.orden1 {
+	font-size:2em;
+	list-style-type:roman;
+	margin-left:auto;
+	margin-right:0px;
+}
+
+.orden2 {
+	font-size:1em;
+	list-style-type:lower-roman;
+}
+
+h1 {
+	color: #25D87E;
+	font-size:25px;
+}
+
+.parrafoprimer {
+	font-size:12px;
+}
+
+.parrafosegun {
+	font-size:45px;
+	border:5px solid #25D87E
+}
+
+.parrafotercer {
+	color:#0062A6;
+	font-style:bold;
+}
+
+.parrafocuarto {
+	font-family:Arial;
+}
+
+.parrafoquinto {
+	padding:345px;
+}

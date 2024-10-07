@@ -1,0 +1,35 @@
+body{
+	background-image : url("../imgenes/grees.png");
+	margin-left: 150px ;
+	margin-right: 150px ;
+}
+
+h1{
+	
+color: #E10000;	
+	
+}
+
+
+#inicio{
+	margin-left: 120px ;
+	
+	
+}
+
+img.l {
+	
+	margin-right: 150px ;
+}
+
+ol.b{
+list-style-type: upper-roman;	
+}
+
+ol.c{
+	list-style-type: lower-alpha;
+}
+h1{
+border-style: outset;	
+	
+}

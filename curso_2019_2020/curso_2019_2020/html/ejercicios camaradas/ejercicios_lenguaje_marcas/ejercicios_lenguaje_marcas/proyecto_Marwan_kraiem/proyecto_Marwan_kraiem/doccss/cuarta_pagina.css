@@ -1,0 +1,55 @@
+body{
+	background-color : #FF553D ;
+	
+}
+
+p{
+	color : #FCFCFC ;
+	margin-left : 50px;
+	margin-right : 50px;
+	border: black 2px solid;
+	 background-image : url("../imgenes/fondo-negro.jpg");
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+.title1{
+border-style: outset;	
+	margin-left : 300px;
+	margin-right : 300px;
+}
+.title2{
+	border-style: outset;
+	margin-right: 1000px;
+}
+
+TABLE,td,th {
+	border: 1px solid black;
+}
+
+.title1{
+	text-align: center;
+	
+}
+th.celda1 {
+  background-color: #424949;
+  color: #FDFEFE;
+}
+
+th.celda2{
+	 background-color: #424949;
+  color: #FDFEFE;
+}
+hr{
+	margin-left:200px;
+	margin-right:200px;
+	
+	
+}
+a{
+	color : #FCFCFC ;
+	font-size : 1.5em;
+	
+	
+}
+
+tr:nth-child(even){background-color: #F1948A

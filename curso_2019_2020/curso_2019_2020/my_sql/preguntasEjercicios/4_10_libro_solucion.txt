@@ -1,0 +1,249 @@
+
+#1
+#version SQL-86
+select NombreCliente, count(*) 
+from Pedidos,Clientes 
+where Pedidos.CodigoCliente=Clientes.CodigoCliente
+ group by NombreCliente;
+
+#version SQL-92 (Natural Join)
+select NombreCliente,count(*)
+from Pedidos natural join Clientes
+group by NombreCliente;
+
+#version SQL-92 (Inner join)
+select NombreCliente,count(*)
+from Pedidos inner join Clientes 
+    On Pedidos.CodigoCliente=Clientes.CodigoCliente
+group by NombreCliente;
+
+
+#2.-
+#version SQL-86
+select NombreCliente,sum(Cantidad)
+from Pagos,Clientes
+where Pagos.CodigoCliente=Clientes.CodigoCliente
+group by NombreCliente;
+
+#version SQL-92
+select NombreCliente,sum(Cantidad)
+from Pagos natural join Clientes
+group by NombreCliente;
+
+
+#3.-
+#version SQL-86 
+select distinct NombreCliente
+from Pedidos, Clientes
+where Pedidos.CodigoCliente=Clientes.CodigoCliente
+and Pedidos.FechaPedido like '2008%'
+ 
+#version SQL-92 (Inner join)
+select distinct NombreCliente
+from Pedidos natural join Clientes
+where Pedidos.FechaPedido like '2008%'
+
+#4.-
+a) select Clientes.NombreCliente,Empleados.Nombre
+from Empleados 
+	inner join Clientes 
+  	on Clientes.CodigoEmpleadoRepVentas=Empleados.CodigoEmpleado
+  where not exists (Select CodigoCliente from Pagos 
+					where Pagos.CodigoCliente=Clientes.CodigoCliente); 	
+ 
+ 
+ 
+b ) select Clientes.NombreCliente,Empleados.Nombre,Empleados.Apellido
+	from Empleados 
+	inner join Clientes 
+  	on Clientes.CodigoEmpleadoRepVentas=Empleados.CodigoEmpleado
+  where clientes.codigocliente not in(Select CodigoCliente 
+									from Pagos);
+		
+#5.-  (repetida de prc 4.9)
+a) select Clientes.NombreCliente,Empleados.Nombre,Oficinas.Ciudad
+   from Empleados, Oficinas, Clientes       
+   where Oficinas.CodigoOficina=Empleados.CodigoOficina
+   and Clientes.CodigoEmpleadoRepVentas=Empleados.CodigoEmpleado;
+
+b) select Clientes.NombreCliente,Empleados.Nombre,Oficinas.Ciudad
+   from Empleados 
+    inner join Oficinas 
+	on Oficinas.CodigoOficina=Empleados.CodigoOficina
+    inner join Clientes 
+  	on Clientes.CodigoEmpleadoRepVentas=Empleados.CodigoEmpleado;
+
+
+#6.-
+select Nombre,Apellido1,Apellido2,CodigoOficina,Puesto 
+from Empleados
+where Puesto not like'Representante Ventas';
+
+#7.-
+#version SQL-86 
+select Ciudad,count(*)
+from Empleados, Oficinas
+where Empleados.CodigoOficina=Oficinas.CodigoOficina
+group by Ciudad;
+
+#version SQL-92 (Inner join)
+select Ciudad,count(*)
+from Empleados natural join Oficinas
+group by Ciudad;
+
+
+#8.- (repetidad de prc. 4.9)
+select e.Nombre as subordinado,j.Nombre as jefe 
+from Empleados e inner join Empleados j 
+on e.CodigoJefe = j.CodigoEmpleado;
+
+#9.-
+#version SQL-86
+select Nombre,Apellido1,Apellido2,Ciudad,Puesto 
+from Empleados,Oficinas
+where Empleado.CodigoOficina=Oficinas.CodigoOficina
+and not exists (select CodigoCliente from Clientes 
+where 					CodigoEmpleadoRepVentas=CodigoEmpleado);
+
+#version SQL-92
+select Nombre,Apellido1,Apellido2,Ciudad,Puesto 
+from Empleados natural join Oficinas
+where not exists (select CodigoCliente from Clientes 
+				where CodigoEmpleadoRepVentas=CodigoEmpleado);
+
+#versión de diego
+select Nombre,Apellido1,Apellido2,Ciudad,Puesto 
+from Empleados natural join Oficinas
+where empleados.CodigoEmpleado NOT IN (select CodigoEmpleadoRepVentas 
+												from Clientes );
+
+#10.-
+#version SQL-86
+select avg(CantidadEnStock), Gama
+from Productos
+group by Gama;
+
+#11.-
+#version SQL-86 
+select Clientes.NombreCliente,Clientes.Ciudad
+from Clientes, Oficinas 
+where Clientes.Ciudad=Oficinas.Ciudad;
+
+#version SQL-92
+OJO:El filtro es Clientes.Ciudad = Oficinas.Ciudad
+select Clientes.NombreCliente ,Clientes.Ciudad
+from Clientes inner join Oficinas 
+	  on Oficinas.Ciudad=Clientes.Ciudad;
+  	
+#12.-
+select Clientes.NombreCliente,Clientes.Ciudad
+from Clientes 
+where not exists (select CodigoOficina from Oficinas 
+where Oficinas.Ciudad=Clientes.Ciudad);
+
+#version Lucía
+select clientes.codigocliente, clientes.ciudad 
+from clientes
+where ciudad not in (select oficina.ciudad			
+						from oficinas inner join clientes
+						on clientes.ciudad=oficinas.ciudad)
+order by clientes.ciudad desc;
+
+
+#13.-
+#version SQL-86 
+select count(*),Empleados.Nombre
+from Clientes, Empleados 
+where Clientes.CodigoEmpleadoRepVentas=Empleados.CodigoEmpleado
+and Empleados.Puesto='Representante Ventas'
+group by Empleados.Nombre;
+
+#version SQL-92
+select count(*),Empleados.Nombre
+from Clientes inner join Empleados on Clientes.CodigoEmpleadoRepVentas=Empleados.CodigoEmpleado
+where Empleados.Puesto='Representante Ventas'
+group by Empleados.Nombre;
+ 
+#14.-
+
+#version SQL-86
+select CodigoCliente, NombreCliente 
+from Pagos,Clientes 
+where Pagos.CodigoCliente=Cliente.CodigoCliente 
+and (Cantidad=(select max(Cantidad) from Pagos) 
+or Cantidad=(Select Min(Cantidad) from Pagos));
+
+#version SQL-92
+select CodigoCliente, NombreCliente 
+from Pagos natural join Clientes 
+where Cantidad=(select max(Cantidad) from Pagos) 
+or Cantidad=(Select Min(Cantidad) from Pagos);
+
+#15.-
+
+select sum(Cantidad*PrecioUnidad), CodigoPedido
+from DetallePedidos
+group by CodigoPedido;
+
+
+#16.-
+
+#version SQL-86 
+select distinct CodigoCliente
+from Pedidos, DetallePedidos
+where Pedidos.CodigoPedido=DetallePedidos.CodigoPedido
+group by CodigoPedido
+having sum(Cantidad*PrecioUnidad)>2000
+
+#version SQL-92 
+select distinct CodigoCliente
+from Pedidos Natural Join DetallePedidos
+where fechapedido between '2008/01/01' and '2008/12/31'
+group by CodigoPedido
+having sum(Cantidad*PrecioUnidad)>2000;
+
+#17.-
+#version SQL-86
+select NombreCliente,Estado,count(*)
+from Clientes,Pedidos
+where Clientes.Codigocliente=Pedidos.CodigoCliente 
+group by NombreCliente,Estado;
+
+#version SQL-92 
+select NombreCliente,Estado,count(*)
+from Clientes natural Join Pedidos 
+group by NombreCliente,Estado;
+
+select CodigoCliente,Estado,count(*)
+from  Pedidos 
+group by CodigoCliente,Estado;
+
+#18.-
+#version SQL-86 
+select NombreCliente,CodigoProducto,sum(cantidad)
+from Pedidos,Clientes, DetallePedidos
+where Pedidos.CodigoCliente=Clientes.CodigoCliente
+and Pedidos.CodigoPedido=DetallePedidos.CodigoPedido
+group by CodigoProducto
+having sum(Cantidad) > 200;
+
+#version SQL-92 
+#para cada producto de cada cliente
+select NombreCliente,CodigoProducto,sum(cantidad)
+from Pedidos
+inner join Clientes 
+	on pedidos.CodigoCliente=clientes.CodigoCliente
+inner Join DetallePedidos 
+	on pedidos.CodigoPedido=detallepedidos.CodigoPedido
+group by pedidos.CodigoCliente,detallepedidos.CodigoProducto
+having sum(Cantidad) > 200;
+
+#para pedidos de cualquier producto
+
+select NombreCliente,CodigoProducto,cantidad
+from Pedidos
+inner join Clientes 
+	on pedidos.CodigoCliente=clientes.CodigoCliente
+inner Join DetallePedidos 
+	on pedidos.CodigoPedido=detallepedidos.CodigoPedido
+where detallepedidos.Cantidad>200;

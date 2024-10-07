@@ -1,0 +1,32 @@
+#primero{
+    width: 90%;
+    background-color: #0A2229;
+    border:3px solid #0B4C5F;
+    padding: 0.75em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#segundo{
+    width: 90%;
+    background-color: #F7BE81;
+    padding: 1em;
+    background-image: url("rugoso.jpg");
+}
+
+.estilo1{
+    color:#ffffff;
+    font-size:12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.estilo1 .estilo2{
+    color:#F7BE81;
+    font-size: 20px;
+}
+
+p.estilo3{
+    color:#4bff81;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

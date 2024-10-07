@@ -1,0 +1,57 @@
+/*Priimera Tabla*/
+caption{
+	caption-side:bottom;
+	color:#C627D5;
+}
+
+.tabla1{
+	border:1px solid #C627D5;
+	margin: auto;
+}
+
+.tabla1 tr td{
+	border:1px solid #C627D5;
+	width:160px;
+	height: 100px;
+}
+
+table tr td.imagenarbol{
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 85px;
+	background-color: #00822B;
+}
+
+/*Segunda Tabla*/
+
+.tabla2{
+	border:1px solid #C627D5;
+	margin: auto;
+}
+
+.tabla2 tr td{
+	border:1px solid #C627D5;
+	width:160px;
+	height: 100px;
+}
+
+table tr td.imagenarbol2{
+	background-color: #00822B;
+}
+
+/*Tercera Tabla*/
+
+.tabla3{
+	border:1px solid #C627D5;
+	margin: auto;
+}
+
+.tabla3 tr td{
+	border:1px solid #C627D5;
+	width:160px;
+	height: 100px;
+}
+
+table tr td.imagenarbol3{
+	background-color: #00822B;
+}

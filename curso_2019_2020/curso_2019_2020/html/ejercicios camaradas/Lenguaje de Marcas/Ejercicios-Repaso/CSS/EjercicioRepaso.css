@@ -1,0 +1,24 @@
+.cuerpo{
+	background-color:#F4F700;
+	background-image:url("../RECURSOS/Gandhi.jpg");
+	background-repeat:repeat-y;
+	margin-left:300px;
+	font-family:"Times New Roman";
+}
+
+.parrafos{
+	margin:0.5em 0em 0.5em;
+	text-align:justify;
+	padding-left:25px;
+}
+
+.titulo{
+	width:40%;
+	padding-top:75px;
+	border-bottom:10px double #B60021;
+	font-size:50pt;
+	font-family:fantasy;
+	color:#B60021;  
+	background-color:#0CAF07;
+	letter-spacing:1em;
+}

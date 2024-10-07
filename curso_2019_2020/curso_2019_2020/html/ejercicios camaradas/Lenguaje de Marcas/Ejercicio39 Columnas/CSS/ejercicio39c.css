@@ -1,0 +1,13 @@
+#caja{
+    -webkit-column-count: 3;
+    -moz-column-count:3;
+    column-count: 3;
+
+    -webkit-column-gap: 3rem;
+    -moz-column-gap: 3rem;
+    column-gap: 3rem;
+
+    -webkit-column-: 2rem solid #189918;
+    -moz-column-: 2rem solid #189918;
+    column-rule:  2rem solid #189918 ;
+}

@@ -1,0 +1,75 @@
+body{
+	background-image : url("../imgenes/negro.jpg");
+}
+
+h1{
+	font-family: "Mystery Quest", cursive;
+	color : #1F618D ;
+	 font-size: 2.5em ;
+	font-style: oblique;
+}
+
+p{
+	margin-left : 25px ;
+	margin-right : 25px;
+}
+
+.parr1{
+	 border: black 2px solid;
+	 background-image : url("../imgenes/pared_blanco.jpg");
+	font-size: 1.5em;
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+.parr2{
+	 border: black 2px solid;
+	 background-image : url("../imgenes/pared_blanco.jpg");
+	font-size: 1.5em;
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+.parr3{border: black 2px solid;
+	 background-image : url("../imgenes/pared_blanco.jpg");
+	font-size: 1.5em;
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+	}
+	
+.parr4{border: black 2px solid;
+	 background-image : url("../imgenes/pared_blanco.jpg");
+	font-size: 1.5em;
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+	}
+
+strong{
+	font-size: 1.5em;
+	font-style: oblique;
+}
+
+ul{
+	border: black 2px solid;
+	margin-right : 900px;
+}
+@font-face {
+  font-family: "Mystery Quest";
+  src: url("mystery-quest.woff2");
+}
+
+a{
+font-size: 1.5em ;	
+	color : #1F618D ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

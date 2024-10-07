@@ -1,0 +1,51 @@
+body{
+	font-family:Arial;
+	font-size:15pt;
+	background-color:#F4F3FF;
+	margin:10pt 20pt 10pt 20pt;
+}
+
+.listasin{
+	list-style:none;
+	font-family:Comic-Sans;
+	font-size:25px;
+	color:#009184;
+	padding-left:25pt;
+	border-bottom:1pt solid #009184;
+}
+
+
+.lista1{
+	list-style:none;
+	font-family:monospace;
+	font-size:15px;
+	color:#6F0096;
+}
+
+.lista2{
+	list-style:circle;
+	font-family:monospace;
+	font-size:15px;
+	color:#6F0096;
+}
+
+.lista3{
+	list-style:square;
+	font-family:monospace;
+	font-size:15px;
+	color:#6F0096;
+}
+
+.lista4{
+	list-style:lower-roman;
+	font-family:fantasy;
+	font-size:20px;
+	color:#00D3CA;
+}
+
+.lista5{
+	list-style:lower-greek;
+	font-family:fantasy;
+	font-size:20px;
+	color:#00D3CA;
+}

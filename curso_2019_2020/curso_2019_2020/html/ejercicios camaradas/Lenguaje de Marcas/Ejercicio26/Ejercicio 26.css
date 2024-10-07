@@ -1,0 +1,77 @@
+.principal {
+	background-image:url("efectos.gif");
+	color:white;
+	margin-left:100px;
+	margin-right:200px;
+	font-family:Courier;
+}
+
+.barra {
+	height:5px;
+	background-color:red;
+}
+
+.titulo {
+	text-align:center;
+}
+
+.titulo2 {
+	font-size:30px;
+}
+
+.titulo3 {
+	font-size:30px;
+	margin-bottom:69px;
+}
+
+.titulo4 {
+	font-size:30px;
+	margin-top:8px;
+}
+
+.parrafo1 {
+	font-family:Impact;
+}
+
+.parrafo2 {
+	font-family:Comic Sans MS;
+}
+
+table{
+	text-align:center;
+}
+
+h1 {
+	background-image:url("madera.jpg");
+	border: 5px solid red;
+}
+
+h2 {
+	background-image:url("madera.jpg");
+	border: 5px solid red;
+}
+
+.sinop1 {
+	margin-top:-20px;
+}
+
+.valoraciones {
+	margin:auto;
+}
+
+.valoraciones1 {
+	font-weight:bold;
+	font-size:35px;
+	list-style-type:none;
+	background-image:url("madera.jpg");
+	border: 5px solid red;
+}
+
+
+
+.valoraciones2 {
+	font-size:20px;
+	text-align:center;
+	margin-left:250px;
+	margin-right:290px;
+}

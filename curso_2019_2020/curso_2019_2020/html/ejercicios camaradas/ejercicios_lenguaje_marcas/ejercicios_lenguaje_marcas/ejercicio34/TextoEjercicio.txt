@@ -1,0 +1,78 @@
+LA PROGRAMACIÓN ESTRUCTURADA</h1>
+
+LAS ESTRUCTURAS DE CONTROL
+	
+En programación, las estructuras de control permiten modificar el flujo de ejecución de las instrucciones de un programa.
+
+Todos los lenguajes de programación modernos tienen estructuras de control similares. Básicamente lo que varía entre las estructuras de control de los diferentes lenguajes es su sintaxis; cada lenguaje tiene una sintaxis propia para expresar la estructura.
+
+Con las estructuras de control se puede:
+
+De acuerdo con una condición, ejecutar un grupo u otro de sentencias
+De acuerdo con el valor de una variable, ejecutar un grupo u otro de sentencias
+Ejecutar un grupo de sentencias mientras se cumpla una condición
+Ejecutar un grupo de sentencias hasta que se cumpla una condición
+Ejecutar un grupo de sentencias un número determinado de veces
+La programación estructurada es un paradigma de programación basada en el teorema de Edsger Dijkstra que demuestra que todo programa puede desarrollarse utilizando únicamente tres estructuras de control:
+
+Secuencia: las instrucciones se ejecutan sucesivamente, una detrás de otra.
+Selección: bifurcación condicional de una o más.
+Iteracción: Repetición de una operación mientras se cumple una condición.
+
+LA ESTRUCTURA SECUENCIAL
+La estructura de control secuencial está formada por una sucesión de instrucciones que se ejecutan en orden una a continuación de la otra. Cada una de las instrucciones están separadas por el carácter punto y coma (;).
+
+Las instrucciones se suelen agrupar en bloques. El bloque de sentencias se define por el carácter llave de apertura ({) para marcar el inicio del mismo, y el carácter llave de cierre (}) para marcar el final. En Java si el bloque de sentencias está constituido por una única sentencia no es obligatorio el uso de las llaves de apertura y cierre ({ }), aunque sí recomendable.
+
+Bloque secuencial:
+    {
+      sentencia1;
+      sentencia2;
+      sentencia3;
+    }
+Para modificar el orden de ejecución de las instrucciones de un programa se utilizan las estructuras condicionales y repetitivas.
+
+LA ESTRUCTURA DE SELECCIÓN
+
+Las estructuras de selección son empleadas para tomar decisiones lógicas. En este tipo de estructuras se evalúa una condición y en función del resultado se realiza, o no, una serie de instrucciones.
+
+Las estructuras de selección permiten modificar el flujo de un programa. La decisión de ejecutar un bloque de sentencias queda condicionada por el valor de una expresión lógica definida utilizando variables del programa.
+
+Las estructuras de selección pueden ser de tres tipos:
+
+Estructura de selección simple.
+Estructura de selección doble.
+Estructura de selección múltiple.
+Las estructuras selectivas o condicionales simples están compuestas únicamente de una sola condición si es verdadera ejecutara la acción o acciones si la condición es falsa no hará nada.
+
+En las estructuras selectivas dobles si se cumple una condición se ejecuta una instrucción o grupo de instrucciones y si no se cumple se ejecuta otra instrucción o grupo de instrucciones distinto.
+
+La sentencia de selección múltiple se puede conseguir utilizando anidación, if-else-if, o con la sentencia case.
+
+Con al sentencia CASE se evalúa una expresión que devuelve un valor numérico entero y dependiendo del valor devuelto se ejecuta la sentencia asociada a ese valor.
+
+Esta instrucción evalúa una expresión (que debe ser short, int, byte, char o una cadena de caracteres), y según el valor de la misma ejecuta instrucciones. Cada case contiene un valor de la expresión; si efectivamente la expresión equivale a ese valor, se ejecutan las instrucciones de ese case y de los siguientes.
+
+LA ESTRUCTURA REPETITIVA
+También conocidas como bucles, las instrucciones iterativas tienen la misión de ejecutar las mismas instrucciones de código un número de veces, determinado por una condición.
+
+Los bucles agrupan instrucciones las cuales se ejecutan continuamente hasta que una condición que se evalúa sea falsa.
+
+En Java tenemos tres formas de implementar un bucle (como en la mayoría de los lenguajes estructurados):
+
+WHILE: la condición se comprueba antes de empezar a ejecutar la iteración.
+DO-WHILE: la condición se comprueba al final de la iteración.
+FOR: cuando conocemos el numero de iteraciones del bucle
+
+A las divisiones CABECERA, INDICE y CONTENIDO se les ha dado posicionamiento flotante para colocar cada caja en su posición.
+
+A la caja CABECERA se le ha dado un desplazamiento para que se quede en la parte superior, con la anchura completa de la pantalla del navegador
+
+La divisón INDICE debe quedar debajo de la división CABECERA. Como la cabecera tiene una altura del 15%, a la división INDICE se le ha dado un desplazamiento del 16% para que no se solape con la cabecera. Se le ha dado un desplazamiento del 0.2% a la izquierda para colocarlo horizontalmente.
+
+La divisón CONTENIDO tiene posicionamiento flotante con el mismo desplazamiento superior que la división INDICE para que las dos divisiones queden horizontalmente al mismo nivel.
+
+Cada una de las subdivisiones del contenido disponen de un atributo ID con un valor único para que podamos navegar hasta cada subdivisión a traves de los enlaces de la caja INDICE.
+
+El motivo por el que en la zona de contenido sólo se vé la división con la que enlazamos desde INDICE es porque cada división ocupa el 100% de su caja contenedora y se ha ocultado en la división CONTENIDO el texto que desborda
+

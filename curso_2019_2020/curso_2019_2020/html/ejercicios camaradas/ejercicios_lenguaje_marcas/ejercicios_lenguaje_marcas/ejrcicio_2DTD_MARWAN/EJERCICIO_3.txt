@@ -1,0 +1,30 @@
+A-
+SOLUCION:
+EL ELEMENTO NMTOKEN NO PUEDE LLEVAR EAPCIOS y hay que cambiarlo por NMTOKENs.
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE libro [
+ <!ELEMENT libro EMPTY>
+ <!ATTLIST libro autor NMTOKENs #REQUIRED>
+]>
+<libro autor="Mario Vargas LLosa" /> 
+
+_________________________________
+
+B-
+solucion:
+cambiar el attribto id por cddata
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE inventores [
+  <!ELEMENT inventores (inventor*)>
+  <!ELEMENT inventor EMPTY>
+  <!ATTLIST inventor invento CDATA #REQUIRED>
+  <!ATTLIST inventor nombre CDATA  #IMPLIED>
+]>
+
+<inventores>
+  <inventor nombre="Robert Adler" invento="Mando a distancia" />
+  <inventor nombre="Laszlo Josef Biro" invento="Bolígrafo" />
+  <inventor nombre="Josephine Garis Cochran" invento="Lavaplatos" />
+  <inventor invento="Fuego" />
+</inventores>

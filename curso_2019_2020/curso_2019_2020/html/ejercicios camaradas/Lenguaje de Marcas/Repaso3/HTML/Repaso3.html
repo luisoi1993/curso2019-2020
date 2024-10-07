@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+ 
+<head>
+     <title></title>
+	 
+	 <link rel="stylesheet" type="text/css" href="../CSS/Repaso3.css"/>
+	 
+</head>
+ 
+<body>
+
+	<p class="parrafo1">En HTML existen tres tipos de listas: <strong class="resalto">ordenadas, no ordenadas y listas de definici&oacute;n</strong>. Pero podemos anidar listas, es decir, un elemento o &iacute;tem de una lista cuelga de otra lista. Las listas anidadas pueden ser todas del mismo tipo o puede ser cada una de un tipo diferente</p>
+
+	<p class="parrafo2"><strong class="resalto">En las listas anidadas</strong>, existen diferentes niveles de anidamiento. Si la lista no culega de ningun &iacute;tem de otra lista, hablamos del primer nivel. Para determinar en que nivel se encuentra una lista conteremos cuantas etiquetas  <strong class="resalto"> ol, ul o dl</strong> se han definido y no se han cerrado.</p>
+	
+	<h1>Ejemplo de lista de Definicion</h1>
+	
+	<ul class="lista">
+		<li class="nivel1">Estamos en el nivel 1-1</li>
+		<li class="nivel1">Estamos en el nivel 1-2</li>
+			<ul>
+				<li class="nivel2">Estamos en el nivel 2-1</li>
+					<ul>
+					<li class="nivel3">Estamos en el nivel 3-1</li>
+					<li class="nivel3">Estamos en el nivel 3-2</li>
+				</ul>
+			</ul>
+			<ul>
+				<li class="nivel2">Estamos en el nivel 2-2</li>
+					<ul>
+						<li class="nivel3">Estamos en el nivel 3-3</li>
+							<ul>
+								<li class="nivel4">Estamos en el nivel 4-1</li>
+								<li class="nivel4">Estamos en el nivel 4-2</li>
+							</ul>
+					</ul>
+			</ul>
+		<li class="nivel1">Estamos en el nivel 1-3</li>
+	</ul>
+	
+</body>
+ 
+</html>

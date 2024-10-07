@@ -1,0 +1,20 @@
+<!DOCTYPE cartelera[
+    <!ELEMENT cartelera(pelicula*)>
+    <!ELEMENT pelicula(titulo, (titulo_original)?, nacionalidad, genero, clasificación, sinopsis, director,(reparto)+,web,cartel)*>
+            <!ATTLIST pelicula codigo ID #REQUIERED>
+            <!ATTLIST pelicula duración NMTOKEN #REQUIERED>
+            <!ATTLIST pelicula año NMTOKEN="2003" #IMPLIED>
+        <!ELEMENT titulo (#PCDATA)*>
+        <!ELEMENT titulo_original (#PCDATA)>
+        <!ELEMENT nacionalidad (#PCDATA)>
+        <!ELEMENT genero (#PCDATA)>
+        <!ELEMENT clasificación (#PCDATA)>
+            <!ATTLIST clasificación CDATA #IMPLIED>
+        <!ELEMENT sinopsis (#PCDATA)>
+        <!ELEMENT director (#PCDATA)>
+        <!ELEMENT reparto (#PCDATA)>
+        <!ELEMENT web (#PCDATA)>
+        <!ELEMENT cartel (#PCDATA)>
+    <!ELEMENT reparto(actor)*>
+        <!ELEMENT actor (#PCDATA)*>
+]>

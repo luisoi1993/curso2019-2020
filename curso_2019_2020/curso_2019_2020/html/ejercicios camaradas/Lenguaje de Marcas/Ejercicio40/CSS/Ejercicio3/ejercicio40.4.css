@@ -1,0 +1,107 @@
+body{
+	width: 60%;
+	height: 80em;
+	margin: auto;
+	margin-top: 1%;
+}
+
+#primero{
+	position: absolute;
+	z-index: 6;
+	background-color: #9EEBAE;
+	opacity: 0.8;
+	border: 3px dotted #72BB81;
+	width: 60%;
+}
+
+.texto1{
+	font-weight: bold;
+	padding: 3%;
+}
+
+#segundo{
+	position: absolute;
+	z-index: 2;
+	background-color: #9EEBAE;
+	opacity: 0.8;
+	border: 3px dotted #72BB81;
+	margin-top: 32%;
+	width: 60%;
+}
+
+.texto1_1{
+	font-weight: bold;
+	padding: 3%;
+}
+
+#tercero{
+	position: absolute;
+	z-index: 4;
+	background-color: #F08AC6;
+	opacity: 0.8;
+	border: 3px dotted #D93B8F;
+	height: 65%;
+	margin-left: 20%;
+	margin-top: 2%;
+	width: 38%;
+}
+
+.texto{
+	padding-top: 43%;
+	padding-left: 3%;
+	font-weight: bold;
+}
+
+#cuarto{
+	position: absolute;
+	background-color: #D9C767;
+	opacity: 0.8;
+	border: 3px dotted #9C9C32;
+	margin-left: 21.5%;
+	width: 35%;
+	margin-top: 5%;
+	z-index: 5;
+}
+
+.texto2{
+	font-weight: bold;
+	padding: 3%;
+	padding-top: 12%;
+}
+
+#quinto{
+	position: absolute;
+	background-color: #D9C767;
+	opacity: 0.8;
+	border: 3px dotted #9C9C32;
+	margin-left: 21.5%;
+	width: 35%;
+	margin-top: 26%;
+	z-index: 5;
+}
+
+.texto5{
+	padding-left: 2%;
+	font-weight: bold;
+	padding-top: 5%;
+	padding-bottom: 12%;
+}
+
+#sexto{
+	position: absolute;
+	background-color: #A56EA7;
+	opacity: 0.8;
+	border: 3px dotted #931E8F;
+	margin-left: 35%;
+	width: 18%;
+	margin-top: 6%;
+	z-index: 5;
+	text-align: center;
+	height: 47%;
+}
+
+.texto6{
+	padding-top: 68%;
+	font-weight: bold;
+}
+

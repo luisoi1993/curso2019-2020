@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="Ejercicio3.css"?>
+<!DOCTYPE listapedidos [
+    <!--Elementos-->
+    <!ELEMENT listapedidos (pedido*)>
+    <!ELEMENT pedido (numeroserie, cantidad, peso?)>
+    <!ELEMENT numeroserie (#PCDATA)>
+    <!ELEMENT cantidad (#PCDATA)>
+    <!ELEMENT peso (#PCDATA)>
+]>
+
+<listapedidos>
+    <pedido>
+        <numeroserie>56164856CX</numeroserie>
+        <cantidad>25</cantidad>
+    </pedido>
+    <pedido>
+        <numeroserie>75D8464F</numeroserie>
+        <cantidad>3</cantidad>
+        <peso>1Kg</peso>
+    </pedido>
+</listapedidos>

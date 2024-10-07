@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="doc_css.css"?>
+
+<!DOCTYPE pedidos [
+<!ELEMENT pedidos (pedido+)>
+<!ELEMENT pedido ((empresa|cliente),productos+,fecha,factura?)>
+<!ELEMENT  factura (emisor,total,fecha)>
+<!ELEMENT persona (#PCDATA)>
+<!ELEMENT empresa (#PCDATA)>
+<!ELEMENT producto (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ATTLIST persona nif ID #REQUIRED>
+<!ATTLIST empresa cif ID #REQUIRED>
+<!ATTLIST factura numfactura ID #REQUIRED>
+<!ATTLIST  pedido cliente IDREF #IMPLIED>
+<!ATTLIST pedido producto IDREFS #IMPLIED>
+<!ATTLIST  cliente codigo_cliente ID #IMPLIED>
+<!ATTLIST empresa codigo_impresa ID #IMPLIED>
+<!ATTLIST empresa sector NMTOKEN #REQUIRED>
+<!ATTLIST empresa actividad NMTOKENS #REQUIRED>
+<!ENTITY MIEMPRESA "ESTA ES MI EMPRESA">
+]>
+
+<pedidos>
+<pedido cliente="" producto="">
+<empresa cif="" codigo_impresa="" sector="123.456-789_:10" actividad="123. 456 -789 _ :10">     </empresa>
+<productos>alementaciones</productos>
+<fecha>02/05/2016</fecha>
+<factura numfactura=""> 
+<emisor>&MIEMPRESA; </emisor>
+<total>  </total>
+<fecha>  </fecha>
+</factura>
+</pedido>
+</pedidos>
+

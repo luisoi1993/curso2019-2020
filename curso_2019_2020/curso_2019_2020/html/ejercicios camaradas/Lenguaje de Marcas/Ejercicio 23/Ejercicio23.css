@@ -1,0 +1,39 @@
+.tabla {
+	border:1px solid black;
+}
+
+.tabla2 tr, td {
+	border:1px solid black;
+}
+
+.tabla3 tr, td {
+	border:1px solid black;
+	border-collapse:collapse;
+}
+
+.tabla3 {
+	border:1px solid black;
+	border-collapse:collapse;
+}
+
+.tabla4 tr, td {
+	border:1px solid black;
+	border-spacing:3px;
+}
+
+.tabla4 {
+	border:1px solid black;
+	border-spacing:3px;
+}
+
+.tabla5 tr td  {
+	border:3px solid black;
+	border-collapse:collapse;
+	border-color:#035C63;
+}
+
+.tabla5 {
+	border:3px solid black;
+	border-collapse:collapse;
+	border-color:#035C63;
+}

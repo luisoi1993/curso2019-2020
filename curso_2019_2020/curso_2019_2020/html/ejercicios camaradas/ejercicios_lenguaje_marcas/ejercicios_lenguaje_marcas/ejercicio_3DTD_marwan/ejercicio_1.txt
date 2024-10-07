@@ -1,0 +1,25 @@
+-----------|
+codigo DTD |
+-----------|
+<!Doctype cartelera [
+<!element cartelera (película)*>
+<!element película (título,título_original,nacionalidad,género,
+clasificación,sinopsis,director,reparto,web?,cartel,sin_clasificaión?)>
+<!element reparto (actor+)> 
+<!element título (#pcdata)>
+<!element título_original (#pcdata)>
+<!element nacionalidad (#pcdata)>
+<!element género (#pcdata)>
+<!element clasificación empty>
+<!element sinopsis (#pcdata)>
+<!element director (#pcdata)>
+<!element web (#pcdata)>
+<!element cartel (#pcdata)>
+<!element sin_clasificación empty>
+<!element actor (#pcdata)>
+/*attributos*/
+<!attlist película año="2003">
+<!attlist película duración cdata "">
+<!attlist cartel (gif | jpg) "gif" #implied>
+
+/*no es completado*/

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE factura[
+    <!ELEMENT factura(cabecera, vendedor, pedido)>
+    <!ELEMENT cabecera (#PCDATA)>
+    <!ELEMENT vendedor (identificador,nombre)>
+    <!ELEMENT pedido (#PCDATA)>
+    <!ELEMENT identificador (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+]>
+
+<factura>
+    <cabecera>Factura Mes Marzo</cabecera>
+    <vendedor>
+        <identificador>1</identificador>
+        <nombre>Nombre</nombre>
+    </vendedor>
+    <pedido>Pedido1</pedido>
+</factura>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="receta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="parrafo"/>
+        <xs:element ref="titulo"/>
+        <xs:element ref="ingredientes"/>
+        <xs:element ref="procedimiento"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="parrafo" type="xs:string"/>
+  <xs:element name="titulo" type="xs:NMTOKEN"/>
+  <xs:element name="ingredientes" type="xs:NMTOKEN"/>
+  <xs:element name="procedimiento" type="xs:NMTOKEN"/>
+</xs:schema>

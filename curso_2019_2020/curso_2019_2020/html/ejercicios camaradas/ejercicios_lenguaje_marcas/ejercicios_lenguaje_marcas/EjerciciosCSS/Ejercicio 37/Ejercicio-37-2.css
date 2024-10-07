@@ -1,0 +1,56 @@
+#Cabecera {
+	background-color: #0040FF;
+	width: auto;
+	height: 100px;
+	clear:both;
+	text-align: center;
+}
+
+#indice {
+	float:left;
+	width: 30%;
+	height: 650px;
+	background-color: #DF7401;
+}
+
+#Cuerpo {
+	float:right;
+	width:70%;
+	height: 650px;
+	background-color: #04B431;
+}
+
+#PiePagina{
+	background-color: #DF01D7;
+	clear:both;
+	width: 100%;
+	text-align: right;
+}
+
+
+
+#Columna1 {
+	float:left;
+	width: 20%;
+	text-align: justify;	
+}
+
+#Columna2 {
+	float: left;
+	width: 20%;
+	margin-left: 15%;
+	text-align: justify;
+}
+
+#Columna3 {
+	float: right;
+	width:20%;
+	margin-right: 10%;
+	text-align: justify;	
+}
+img{
+	width: 200px;
+	height: 250px;
+	margin-top: 70px;
+	margin-left: 75px;
+}

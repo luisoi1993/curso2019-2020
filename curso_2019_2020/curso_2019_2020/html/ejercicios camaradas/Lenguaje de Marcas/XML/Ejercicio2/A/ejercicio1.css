@@ -1,0 +1,8 @@
+nombrecentro, web{
+    display: block;
+}
+
+nombre, grado, decretoTitulo{
+    display: list-item;
+    list-style: disc inside;
+}

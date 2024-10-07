@@ -1,0 +1,47 @@
+/*TABLA 1*/
+.estitabla{
+	border:2px double #000000;
+}
+
+.estitabla tr th{
+	border:2px double #000000;
+}
+
+.estitabla tr td{
+	border:2px double #000000;
+}
+
+/*TABLA 2*/
+.tabla2{
+	width:800px;
+	border:2px solid #B1A6B2;
+	margin:auto;
+	border-collapse:collapse;
+}
+
+.tabla2 tr th{
+	border:2px solid #B1A6B2;
+}
+
+caption{
+	font-weight:bold;
+}
+
+.celda1{
+	background-color:#80DC9C;
+}
+
+.celda2{
+	text-align:left;
+	background-color:#5AECEA;
+}
+
+.celdas3{
+	color:#FF0000;
+}
+
+.celda6{
+	background-color:#F840ED;
+	text-align:right;
+	vertical-align:bottom;
+}

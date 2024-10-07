@@ -1,0 +1,25 @@
+body{
+	font-family: arial;
+	font-style: italic;
+	color:#1409ae;
+	background-image: url(fondo.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin-left: 100px;
+}
+.lis_desordenada{
+	list-style-type: circle;
+	font-size: 2em;
+	color:#EEF607;
+}
+.lis_ordenada{
+	list-style-type: upper-latin;
+	
+}
+#lis_ordenada{
+	font-size: 2.5em;
+	color:#F607EE;
+}
+.imagen{
+	list-style-image: url(copa.png)
+}

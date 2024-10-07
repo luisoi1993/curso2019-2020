@@ -1,0 +1,19 @@
+para casa
+ pared
+ av 100
+ gd 30
+ techo
+ gi 30
+ re 100
+
+fin
+
+para pared
+ repite 4 [av 100 gd 90]
+fin
+
+para techo
+ repite 3 [av 100 gd 120]
+
+fin
+

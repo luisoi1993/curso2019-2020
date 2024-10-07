@@ -1,0 +1,21 @@
+libro,titulo, autor, fecha{
+    display: block;
+    background-color: #76e66b;
+}
+
+titulo{
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    font-weight: bold;
+}
+
+biblioteca{
+    border: 1px solid #000000;
+    background-color: #757373;
+}
+
+libro{
+    border: 1px solid #000000;
+    margin: 0.5%;
+    padding: 0.5%;
+}

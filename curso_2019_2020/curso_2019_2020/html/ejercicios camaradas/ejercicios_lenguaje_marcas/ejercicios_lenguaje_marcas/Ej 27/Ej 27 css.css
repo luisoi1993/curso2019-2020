@@ -1,0 +1,53 @@
+body.cuerpo{
+	background-color: #d9ff66	;
+	margin: 50px;
+	border: 10px  ridge #007100;
+}
+	
+*.primera{
+	border:  2px dotted #ff6666;
+	margin: 10%;
+	padding: 5px;
+	background-color:  #b3ffe6;
+	font-family: monospace;
+	font-style: italic;
+	font-size: 120%;
+	color: #ffff66;
+}
+*.segunda{
+	border: 3px solid #b366ff;
+	margin: 20px;
+	padding: 2px;
+	background-color: #d966ff;
+	font-family: sans-serif;
+	font-size: 130%;
+	color: #ffd966;
+	font-style: oblique;
+	text-align: justify;
+}
+
+*.tercera{
+	font family: serif;
+	font-size: 80%;
+	color: #ff6666;
+	font-style: oblique;
+	text-align: justify;
+}
+
+h1.encabezado{
+	font-size: 200%;
+	color: #ff6666;
+	font-family: arial, helvetica sans-serif;
+	font-width: bolder;
+	font-style: italic;
+	text-align: center;
+	border-bottom-color: #ff6666;
+	border-bottom-style: groove;
+	width: 90%;
+	margin: auto;
+	border-bottom-width: 50px;
+}
+
+h1.encabezadotabla{
+	
+}

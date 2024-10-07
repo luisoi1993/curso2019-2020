@@ -1,0 +1,11 @@
+<!--Definir un elemento llamado puertaCerrada de tipo lógico, que por defecto tenga el valor "falso", y otro
+elemento llamado ventanaAbierta también de tipo lógico, que tenga asignado el valor fijo "verdadero". -->
+
+<xsd:element name="ejercicio2">
+<xsd:complexType>
+    <xsd:sequence>
+        <xsd:element name="puertaCerada" type="xsd:boolean" default="false"/>
+        <xsd:element name="ventanaAbierta" type="xsd:boolean" fixed="true"/>
+    <xsd:sequence>
+</xsd:complexType>
+</xsd:element>

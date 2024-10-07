@@ -1,0 +1,66 @@
+#encabezado{
+    text-align: center;
+    background-color:#004fce;
+    width: 100%;
+    height: 100%;
+    padding-top: 0.5%;
+}
+
+#indice{
+    float: left;
+    width: 20%;
+    background-color: #e9ab00;
+    height: 667px;
+}
+
+#cuerpo{
+    background-color: #50c850;
+    float: right;
+    width: 80%;
+    height: 667px;
+}
+
+#izquierda{
+    width: 30%;
+    float: left;
+}
+
+#centro{
+    margin-left: 2%;
+    float: left;
+    width: 35%;
+}
+
+#derecha{
+    width: 30%;
+    float: right;
+}
+
+#pie{
+    background-color: #f449fa;
+    clear: both;
+    height: 20%;
+    text-align: right;
+    padding-top:0.5%;
+}
+
+img{
+    width: 45%;
+    height: 20%;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+
+#principal{
+    text-align: justify;
+}
+
+#principal p{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#principal h3{
+    padding-left: 2%;
+    padding-right: 2%;
+}

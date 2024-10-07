@@ -1,0 +1,12 @@
+#cuadro{
+    background-color: #cbd3d3;
+    height: 30px;
+    vertical-align: middle;
+    position: relative;
+    padding: 0.7em 0.7em 0em 0.7em;
+}
+
+.texto{
+    position: absolute;
+    left: 93%;
+}

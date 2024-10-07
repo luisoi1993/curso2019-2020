@@ -1,0 +1,41 @@
+
+h1 
+{ text-align: center; }
+
+p  
+{ text-align: justify; 
+margin: 0 40px; }
+
+#principal 
+{
+	width: 900px;
+ height: 900px;
+ background-color: #A5A59E;
+ margin:auto;
+ }
+
+div p 
+ { padding: 5px }
+
+#caja1 
+ { 
+ width: 245px; 
+ height: 230px;
+ background-color:  #F3FC5D; 
+ margin: 30px; 
+ float: left; 
+ }
+ 
+#caja2
+ { 
+ width: 650px;
+ background-color: #69E253; 
+ margin: 10px;  
+ }
+
+#caja3 
+{
+	width: 650px; 
+background-color: #53E2E0; 
+margin: 10px;  
+}

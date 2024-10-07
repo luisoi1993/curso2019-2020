@@ -1,0 +1,70 @@
+A-
+SOLUCION:
+el elemento riaz no es lo que puesto en el codigo xml 
+y tenemos que añadir un * al elemnto marcador para puede repitir varios veces. 
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE marcadres [
+ <!ELEMENT marcadores (marcador*)>
+ <!ELEMENT marcador (nombre, uri)>
+ <!ELEMENT nombre (#PCDATA)>
+ <!ELEMENT uri (#PCDATA)>
+]> 
+
+___________________________________
+
+B-
+SOLUCION:tenemos que poner * Al elementos efemerides hecho para se puede repitir y ademas tenemos que especificar
+el tipo de data que tienen los elementos fecha y hecho. 
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE efemerides [
+ <!ELEMENT efemerides (efemeride*)>
+ <!ELEMENT efemeride (fecha, hecho)>
+ <!ELEMENT fecha (#PCDATA)>
+ <!ELEMENT hecho (#PCDATA)> 
+]>
+
+_______________________________________
+C-
+SOLUCION:tenemos que poner * al elemento nombre cerrado para se pueden repitir y ademas tenemos que poner empty al elemnto cerrado.
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE aeropuertos [
+ <!ELEMENT aeropuertos (aeropuerto*)>
+ <!ELEMENT aeropuerto (nombre, cerrado)>
+ <!ELEMENT nombre (#PCDATA)>
+ <!ELEMENT cerrado EMPTY>
+]> 
+
+_________________________________________
+
+D-
+solucion:no estan en orden
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vuelos [
+ <!ELEMENT vuelos (vuelo*)>
+ <!ELEMENT vuelo (origen||destino, origen||destino)>
+ <!ELEMENT origen (#PCDATA)>
+ <!ELEMENT destino (#PCDATA)>
+]> 
+
+_______________________________________________
+
+E-
+SOLUCION:tenemos que poner attributos al elemento reina.
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reyesEspañoles [
+ <!ELEMENT reyesEspañoles (rey*, reina*)>
+ <!ELEMENT rey (nombre, padre, madre)>
+<!ELEMENT reina (nombre, padre, madre)>
+ <!ELEMENT nombre (#PCDATA)>
+ <!ELEMENT padre (#PCDATA)>
+ <!ELEMENT madre (#PCDATA)>
+]> 
+
+_____________________________________________________
+
+	
+ 

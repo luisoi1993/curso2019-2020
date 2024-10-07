@@ -1,0 +1,30 @@
+h1{
+	text-align:center;
+}
+
+.principal{
+	background-color:#A59F9F;
+	height:80%;
+}
+
+.caja1{
+	background-color:#FBF71A;
+	float: left;
+	height:350px;
+	width:200px;
+	margin:20px;
+}
+
+.caja2{
+	background-color:#57F64B;
+	height:250px;
+	width:650px;
+	margin:20px;
+}
+
+.caja3{
+	background-color:#76DCD2;
+	height:250px;
+	width:650px;
+	margin:20px;
+}

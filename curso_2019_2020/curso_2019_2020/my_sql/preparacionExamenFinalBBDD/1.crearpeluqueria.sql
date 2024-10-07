@@ -1,0 +1,60 @@
+DROP DATABASE peluqueria;
+CREATE DATABASE peluqueria DEFAULT CHARACTER SET UTF8
+COLLATE utf8_general_ci;
+
+USE peluqueria;
+
+CREATE TABLE servicios(
+	codigo INTEGER AUTO_INCREMENT PRIMARY KEY,
+	fechahora DATETIME NOT NULL,
+	tiposervicio VARCHAR(100)
+	) ENGINE=INNODB;
+	
+CREATE TABLE empleados(
+	DNI VARCHAR(10)  PRIMARY KEY,
+	nombre VARCHAR(50) NOT NULL,
+	especialidad VARCHAR(50) NOT NULL
+) ENGINE=INNODB;
+
+CREATE TABLE clientes(
+	DNI VARCHAR(10)  PRIMARY KEY,
+	nombre VARCHAR(50) NOT NULL,
+	profesion VARCHAR(50) NOT NULL,
+	telefono VARCHAR(11) NOT NULL,
+	direccion VARCHAR(100) NULL
+) ENGINE=INNODB;
+
+CREATE TABLE cosmeticos(
+	codigo INTEGER AUTO_INCREMENT PRIMARY KEY,
+	nombre VARCHAR(50),
+	precio DECIMAL(7,2)
+) ENGINE=INNODB;
+
+CREATE TABLE citas(
+	DNIempleado VARCHAR(10),
+	DNIcliente VARCHAR(10),
+	codigoservicio INTEGER NOT NULL,
+	fechahora DATETIME NOT NULL,
+	PRIMARY KEY(DNIempleado,DNIcliente,codigoservicio,fechahora),
+	CONSTRAINT fk_ce FOREIGN KEY(DNIempleado) REFERENCES empleados(DNI)
+	ON DELETE NO ACTION ON UPDATE CASCADE,
+	CONSTRAINT fk_cc FOREIGN KEY(DNIcliente) REFERENCES clientes(DNI)
+	ON DELETE NO ACTION ON UPDATE CASCADE,
+	CONSTRAINT fk_cs FOREIGN KEY(codigoservicio)
+	REFERENCES servicios(codigo)
+	ON DELETE CASCADE ON UPDATE CASCADE
+	)ENGINE=INNODB;
+	
+	CREATE TABLE ventas(
+		DNIempleado VARCHAR(10),
+		DNIcliente VARCHAR(10),
+		codigocosmetico INTEGER NOT NULL,
+		cantidad INTEGER NOT NULL,
+		comision INTEGER NOT NULL,
+		PRIMARY KEY(DNIempleado,DNIcliente,codigocosmetico),
+		CONSTRAINT fk_ve FOREIGN KEY (DNIempleado) REFERENCES empleados(DNI),
+		CONSTRAINT fk_vc FOREIGN KEY(DNIcliente) REFERENCES clientes(DNI),
+		CONSTRAINT fk_vco FOREIGN KEY(codigocosmetico) REFERENCES cosmeticos(codigo)
+		)ENGINE=INNODB;
+		
+		 

@@ -1,0 +1,20 @@
+#caja{
+    /*Para Chrome, Opera y Safari*/
+    -webkit-column-count: 3;
+    /*Para Mozilla Firefox*/
+    -moz-column-count:3;
+    column-count: 3;   
+
+    -webkit-column-: 0.5rem solid #000000;
+    -moz-column-: 0.5rem solid #000000;
+    column-rule:  0.5rem solid #000000 ;
+}
+
+img{
+    width: 10%;
+    height: 10%;
+    -webkit-column-span: all;
+    column-span: all;
+    display: block;
+    margin: auto;
+}

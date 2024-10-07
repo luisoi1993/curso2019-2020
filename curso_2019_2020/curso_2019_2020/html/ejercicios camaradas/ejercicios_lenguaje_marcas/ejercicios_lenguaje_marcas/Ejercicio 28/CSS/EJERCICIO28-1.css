@@ -1,0 +1,29 @@
+.parrafo1 {
+	font-family: helvetica;
+	color: #860B06;
+	font-size:2em;
+	font-style: italic;
+}
+
+.titulo {
+	text-align: center;
+	color:#FFC300;
+	font-family:monospace; 
+	font-size:5em;
+	font-style: oblique;
+}
+
+.linea {
+	border-color:#0B0000;
+	border-width: 30%;
+}
+
+body {
+	background-color:#75D5CE;
+}
+
+.parrafo2 {
+	font-size: 3em;
+	font-family: helvetica;
+	color:#2AC11C;
+}

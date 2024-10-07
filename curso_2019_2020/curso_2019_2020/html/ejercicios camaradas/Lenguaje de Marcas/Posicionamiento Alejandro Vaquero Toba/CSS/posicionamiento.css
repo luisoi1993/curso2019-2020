@@ -1,0 +1,283 @@
+body{
+    background-color: #51eead;
+    background-image: url("../imagenes/fondo.jpg");
+}
+
+#principal{
+    height: 60em;
+    width: 100%;
+    margin: auto;
+}
+
+div div div{
+    width: 100%;
+    height: 100%;
+}
+
+/*Cabecera*/
+#cabecera{
+    margin: auto;
+    height: 10%;
+    width: 90%;
+    background-color: #65A95C;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 3px 5px #000000;
+}
+
+.imagen1{
+    float: left;
+    width: 10%;
+    height: 100%;
+    position: relative;
+}
+
+.imagen2{
+    float: right;
+    width: 10%;
+    height: 100%;
+    position: relative;
+}
+
+#cabecera h1{
+    padding-top: 2%;
+    position: relative;
+    margin-bottom: 3%;
+}
+
+/*Menu*/
+#menu{
+    margin: auto;
+    width: 90%;
+    margin-top:1em;
+}
+
+#menu .izq{
+    float: left;
+    background-color:#65A95C;
+    color: #ffffff;
+    border: 5px solid #00460c;
+}
+
+.izq a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+#menu .der{
+    float:left;
+    background-color:#65A95C;
+    color: #ffffff;
+    border: 5px solid #00460c;
+	margin-left: 22%;
+}
+
+.der a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+.cabe{
+	font-family: Bowlby One SC;
+	text-align: center;
+	border-bottom: 8px groove #000000;
+	width: 80%;
+	margin: auto;
+}
+
+/*Cuerpo*/
+
+.logon{
+	width:50%;
+	height: 25%;
+	padding-left: 17.5%;
+	margin-bottom: 2em;
+}
+
+#izquierda{
+    float: left;
+    margin-top:0.7em;
+	padding-top: 3em;
+    margin-left:5%;
+    width: 20%;
+    background-color: #65A95C;
+    clear: left;
+    color:#ffffff;
+    font-weight: bold;
+	height: 74%;
+	font-family: rockwell;
+	font-size: 1.5em;
+	
+}
+
+#izquierda a{
+    color:#ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#izquierda a:hover{
+	color:#000000;
+	font-weight: bold;
+}
+
+#derecha{
+    float: left;
+    background-color: #65A95C;
+    margin-left: 2em;
+    margin-top: 1em;
+    width:65%;
+    padding: 0.5em 0.5em 0.5em 2em;
+	height: 80%;
+	color:#FFFFFF;
+	font-weight: bold;
+	font-family: Rockwell;
+	overflow: hidden;
+}
+
+div div span{
+	font-size: 3em;	
+}
+
+h1{
+	font-family: Bowlby One SC;
+	text-align: center;
+	border-bottom: 8px groove #000000;
+}
+
+.android{
+	text-align: center;
+	font-size: 9em;
+	padding-top: 23%;
+}
+
+/*Parrafo 2*/
+
+.android2{
+	width: 17%;
+	height: 25%;
+	margin-left: 38%;
+}
+
+.creador{
+	font-size: 2em;
+}
+
+.centrado{
+	text-align: center;
+}
+
+.izquierda{
+	text-align: left;
+}
+
+.volver{
+	text-align: right;
+	margin-top: 3%;
+}
+
+.volver a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.volver a:hover{
+	color:#000000;
+	font-weight: bold;
+}
+
+.logo{
+	float:left;
+	width:10%;
+	height: 15%;
+	margin-right: 0.5em;
+}
+
+/*Parrafo3 */
+
+.titulo3{
+	text-align: center;
+}
+
+.linage{
+	float:left;
+}
+
+.texto3{
+	float:left;
+}
+
+.volver2{
+	text-align: right;
+	margin-top:12%;
+}
+
+.volver2 a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.volver2 a:hover{
+	color:#000000;
+	font-weight: bold;
+}
+
+.enlaces{
+	color:#ffffff;
+	text-decoration: none;
+	font-weight: bold;
+	border-bottom: dashed;
+}
+
+.enlaces:hover{
+	color:#000000;
+	font-weight: bold;
+	border-bottom: dashed;
+}
+
+/*Parrafo 4*/
+
+h2{
+	text-align: center;
+}
+
+.versiones{
+	float:left;
+	margin-left: 10%;
+}
+.version{
+	float:left;
+}
+
+.bordes{
+	border-bottom:5px groove #ffffff;
+}
+
+.volver3{
+	text-align: right;
+	margin-top:-2%;
+}
+
+.volver3 a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.volver3 a:hover{
+	color:#000000;
+	font-weight: bold;
+}
+
+/*Pie*/
+#pie{
+	width: 90%;
+	height: 3em;
+	padding-top: 0.2em;
+	text-align: center;
+	margin: auto;
+	margin-top: 3%;
+	background-color: #65A95C;
+	color:#ffffff;
+}

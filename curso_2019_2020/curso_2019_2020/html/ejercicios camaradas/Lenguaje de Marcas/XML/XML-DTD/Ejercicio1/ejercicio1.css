@@ -1,0 +1,51 @@
+pelicula,titulo, titulo_original, nacionalidad, genero, clasificación, sinopsis, director,reparto,web,cartel{
+    display: block;
+}
+
+titulo{
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+titulo_original{
+    font-weight: bold;
+    font-size: 1.75em;
+    text-align: center;
+}
+
+sinopsis{
+    border: 5px solid #000000;
+}
+
+director{
+    display: block;
+    margin-top: 0.5%;
+    border: 3px solid #7c0000;
+    text-align: center;
+}
+
+reparto,actor{
+    display: block;
+    border-bottom: 2px solid #00ffc8;
+}
+
+web,cartel{
+    display: block;
+    margin-top: 0.5%;
+    text-align: center;
+}
+
+cartel{
+    margin-bottom: 5%;
+}
+
+nacionalidad{
+    text-align: center;
+    font-weight: bold;
+}
+
+genero{
+    text-align: center;
+    font-weight: bold;
+}

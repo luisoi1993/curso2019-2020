@@ -1,0 +1,15 @@
+
+
+<!doctype cancion [
+<!element cancion (título,(compositores*|productres?),(productores?|compositores*),sello,artista)>
+<!element compositor (nombres,apellido)>
+<!element productores (nombres,apellido)>
+<!element título (#pcdata)>
+<!element nombres (#pcdata)>
+<!element apellidos (#pcdata)>
+<!element sello (#pcdata)>
+<!element artista (#pcdata)>
+<!attlist cancion duracion cdata "">
+<!attlist cancion anio cdata "">
+]>
+

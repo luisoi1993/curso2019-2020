@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="prueba.css"?>
+<!DOCTYPE receta[
+	<!ELEMENT receta (titulo?, ingredientes, procedimiento)>
+	<!ELEMENT titulo (#PCDATA)>
+	<!ELEMENT ingredientes (#PCDATA)>
+	<!ELEMENT procedimiento (#PCDATA)>
+]>
+<receta>
+	<titulo>Primera Receta</titulo>
+	<titulo>Primera Receta</titulo>
+	<ingredientes>De todo</ingredientes>
+	<procedimiento>Algo</procedimiento>
+</receta>

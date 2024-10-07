@@ -1,0 +1,36 @@
+.prinivel {
+	font-family:Times New Roman;
+	font-size:1.5em;
+	color:#003B6F;
+}
+
+.segnivel {
+	font-family:Tahoma;
+	font-size:1.2em;
+	color:#126AB7;
+}
+
+.tercnivel {
+	font-family:Corsiva,san-serif;
+	font-size:0.9em;
+	list-style-image:url("flecha2.gif");
+}
+
+.orden1 {
+	font-size:2em;
+	list-style-type:decimal;
+}
+
+.orden2 {
+	font-size:1em;
+	list-style-type:lower-roman;
+}
+
+.orden3 {
+	font-size:1em;
+	list-style-type:armenian;
+}
+
+.orden4 {
+	list-style-image:url('flecha.png');
+}

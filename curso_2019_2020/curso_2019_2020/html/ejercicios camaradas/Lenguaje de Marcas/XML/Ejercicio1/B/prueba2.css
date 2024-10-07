@@ -1,0 +1,11 @@
+titulo, autor, fecha{
+    display: block;
+}
+
+biblioteca{
+    border: 1px solid #000000;
+}
+
+fecha{
+    border-bottom: 1px solid #000000;
+}

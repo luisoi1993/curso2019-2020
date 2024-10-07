@@ -1,0 +1,56 @@
+body{
+	background-image: url("../imagenes/fondoExamen.png");
+	margin-left:50px;
+	margin-right: 50px;
+}
+
+#principal{
+	text-align: justify;
+}
+
+h1{
+	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 20px;
+	font-family: arial, arial;
+}
+
+hr{
+	background-color: #05710B;
+	width: 50%;
+	height: 0.5em;
+}
+.azul{
+	color:#1c52e6;
+}
+
+.debajo{
+	color: #000000;
+	margin-top:-4.7%;
+	margin-left: -0.5%;
+}
+
+#columnas{
+	-webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+
+#pie{
+	text-align: center;
+	padding: 3%;
+}
+
+.imagen1{
+	width: 20%;
+	height: 15%;
+	float: left;
+	margin-right: 0.3em;
+}
+
+.imagen2{
+	width: 20%;
+	height: 15%;
+	float: left;
+	margin-right: 0.3em;
+}

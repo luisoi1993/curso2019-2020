@@ -1,0 +1,8 @@
+nombre, pedido, empresa, cliente, producto, fecha, factura{
+    display: block;
+}
+
+pedido{
+    margin-top: 5%; 
+    margin-left: 45%;
+}

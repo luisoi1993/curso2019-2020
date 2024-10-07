@@ -1,0 +1,4 @@
+/*CSS a todas las etiquetas xml patra comprobar que ejecuta sin errores*/
+listapedidos,pedido,numeroserie,cantidad,peso{
+    display: block;
+}

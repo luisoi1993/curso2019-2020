@@ -1,0 +1,34 @@
+body {
+			background-color: blue;
+			background-image: url("ejercicio 18.jpg");
+			color: #00F5FD;
+		}
+		
+		hr {
+			border-color:green;
+			height:10px;
+			background-color:green;
+		}
+		
+		h1 {
+			margin auto;
+			text-align:center;
+			color: green;
+		}
+		
+		h3 {
+			margin-left:40px;
+			margin-right:120px;
+			color: green;
+		}
+		
+		p {
+			text-align:justify;
+			margin-left:40px;
+			margin-right:120px;
+		}
+		
+		blockquote {
+			margin-left: 80px;
+			margin-right:125px;
+		}

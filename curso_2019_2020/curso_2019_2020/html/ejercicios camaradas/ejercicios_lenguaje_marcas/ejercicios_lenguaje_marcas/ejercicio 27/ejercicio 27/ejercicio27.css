@@ -1,0 +1,149 @@
+
+body {    
+ background-color:  #4dff88;
+ margin: 5px 5px 5px 5px ;
+ border-style: ridge;
+ border-color: #2DC414; 
+}
+
+.primera {
+border-style: dashed;
+border-color: red;
+ margin:10px;
+  background-color:  blue;
+  letter-spacing: 5px;
+   font-family: "Times New Roman", Times, serif;
+   font-style: italic;
+ }
+.segunda {
+border-style: solid;
+border-color:  #66004d;
+ margin:20px;
+letter-spacing: 2px;
+background-color: #ff80df;
+font-family: "Times New Roman", Times, serif;
+   font-style: italic;
+
+}
+#TERCERA {
+font-family: "Times New Roman", Times, serif;
+font-style: italic;
+font-size: 14px;
+text-align: center;
+color: #ff0000; 
+}
+
+h1 {
+	border-style: solid;
+	text-align: center;
+	font-size: 200%;
+	font-family: "Times New Roman", Times, serif;
+	 height: 90%;
+    width: 50pc;
+	 color: red;
+	
+}
+    
+	
+	table.normal {
+    border-collapse: collapse;
+    width: 75%;
+	height: 50%;
+	background-color: #4dc3ff;
+	margin: auto;
+	
+}
+
+.a1 {
+    background-color: #0000ff ;
+}
+
+	
+}
+.A0{
+	 background-color:  #ffffff ; 
+}
+table.especial {
+	 border-collapse: collapse;
+	  width: 75%;
+	height: 50%;
+	margin-right:200px;
+}
+
+
+.A3 {
+	background-color: #e6e6ff ;
+}
+	.A4 {
+		background-color: #4dffff ; 
+	}
+.A5{
+		background-color: #cc00ff ; 
+	}
+ .A6 {
+		background-color: #cc0000 ; 
+	}
+.A7 {
+		background-color: #00802b ; 
+	}
+.A8 {
+		background-color: #006bb3 ; 
+	}
+.A9 {
+		background-color:  #ffffff ; 
+	}
+
+
+TABLE.LATERCERA {
+	 border-collapse: collapse;
+    width: 90%;
+	height: 80%;
+	margin-left: 200px;
+}
+.W3 {
+	height: 20%;
+	
+}
+.W4{
+height: 50%;
+padding: 2px ;
+}
+
+.w5 
+{padding: 2px ;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

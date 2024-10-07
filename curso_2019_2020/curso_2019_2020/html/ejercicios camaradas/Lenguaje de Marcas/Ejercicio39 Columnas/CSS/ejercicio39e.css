@@ -1,0 +1,12 @@
+#caja{
+    /*Para Chrome, Opera y Safari*/
+    -webkit-column-count: 3;
+    /*Para Mozilla Firefox*/
+    -moz-column-count:3;
+    column-count: 3;   
+}
+
+img{
+    width: 15%;
+    height: 15%;
+}

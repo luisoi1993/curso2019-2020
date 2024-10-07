@@ -1,0 +1,29 @@
+.rojo{
+    position: absolute;
+    z-index: 1;
+    background-color: #ff0000;
+    width: 49%;
+    height: 188px;
+    margin-top: 20%;
+    margin-left: 25.5%;
+}
+
+.azul{
+    position: absolute;
+    z-index: 2;
+    background-color: #1900ff;
+    width: 45%;
+    height: 150px;
+    margin-top: 21%;
+    margin-left: 28%;
+}
+
+.verde{
+    position: absolute;
+    z-index: 3;
+    background-color: #21c400;
+    width: 40%;
+    height: 110px;
+    margin-top: 22.25%;
+    margin-left: 30.5%;
+}

@@ -1,0 +1,22 @@
+<productos>
+<producto>
+  <identificador>01</identificador>
+  <nombre>patatas</nombre>
+</producto>
+
+<producto>
+ <idenfiticador>
+el identificador es:
+    <codigo>01</codigo>
+  <identificador> 
+          <nombre>patatas</nombre>
+</producto>
+    <producto>
+          <identificador>
+    el codigo es: 
+         <codigo>01</codigo>
+          el identificador es: 
+            <id>tubesculo</id>
+            <nombre>patatas</nombre>
+            <pruducto>
+</productos>

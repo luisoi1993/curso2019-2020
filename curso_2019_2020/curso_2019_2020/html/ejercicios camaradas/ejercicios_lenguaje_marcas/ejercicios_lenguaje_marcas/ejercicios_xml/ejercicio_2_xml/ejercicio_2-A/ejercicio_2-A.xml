@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/css" href="ejercicio_2-A_css.css" ?>
+<ies>
+<nombrecentro>ies abastos</nombrecentro>
+<web>http://www.iesabastos.org</web>
+<ciclos>
+
+<ciclo id="asir">
+<nombre>administración de sistemas informaciónes en red</nombre>
+<grado>superior</grado>
+<decretotitulo>2009</decretotitulo>
+</ciclo>
+
+
+
+<ciclo id="dam">
+<nombre>desarrollo de aplicaiónes multiplataforma</nombre>
+<grado>superior</grado>
+<decretotitulo>2010</decretotitulo>
+</ciclo>
+
+
+
+<ciclo id="daw">
+<nombre>desarrollo de aplicaiónes web</nombre>
+<grado>superior</grado>
+<decretotitulo>2010</decretotitulo>
+</ciclo>
+
+
+<ciclo id="smr">
+<nombre>sistemas microiformáticos y redes</nombre>
+<grado>medio</grado>
+<decretotitulo>2008</decretotitulo>
+</ciclo>	
+
+
+
+</ciclos>
+</ies>

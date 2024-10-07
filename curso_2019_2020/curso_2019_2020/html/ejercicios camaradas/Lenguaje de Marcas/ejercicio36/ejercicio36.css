@@ -1,0 +1,66 @@
+body{
+    background-color: #5ecc63;
+}
+
+div{
+    background-color: #aae9b8;
+}
+
+h1{
+    text-align: center;
+}
+
+hr{
+    clear: both;
+}
+
+p{
+    text-align: justify;
+    padding: 10px;
+}
+
+.google{
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+
+.nasa{
+    width: 180px;
+    height: 150px;
+    float: right;
+}
+
+.mario{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.mario2{
+    width: 200px;
+    height: 220px;
+    float: right;
+}
+
+.capital{
+    float: left;
+    font-size: 45px;
+    color: #92211d;
+}
+
+.letra::first-letter{
+    float: left;
+    font-size: 45px;
+    color: #92211d;
+}
+
+.texto1{
+    width: 49%;
+    float: left;
+}
+
+.texto2{
+    width: 50%;
+    float: right;
+}

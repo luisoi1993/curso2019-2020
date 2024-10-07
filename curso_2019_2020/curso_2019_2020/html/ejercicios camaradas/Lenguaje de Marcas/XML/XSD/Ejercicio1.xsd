@@ -1,0 +1,23 @@
+<!--
+Para los siguientes elementos, escribe las definiciones de elementos simples correspondientes.
+<ciudad>Roma</ciudad>
+<fecha-de-nacimiento>1996-12-18</fecha-de-nacimiento>
+<hora>18:29:45</hora>
+<nota>7.5</nota>
+<apto>true</apto> 
+-->
+
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="Ejercicio1">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="ciudad" type="xsd:string"/>
+                <xsd:element name="fecha" type="xsd:date"/>
+                <xsd:element name="hora" type="xsd:time"/>
+                <xsd:element name="nota" type="xsd:string"/>
+                <xsd:element name="apto" type="xsd:string"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema> 

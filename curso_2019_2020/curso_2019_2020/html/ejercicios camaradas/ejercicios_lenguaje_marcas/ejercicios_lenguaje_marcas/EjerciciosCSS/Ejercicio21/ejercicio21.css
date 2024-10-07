@@ -1,0 +1,20 @@
+.externa{
+	font-family: times new roman,serif;
+	font-size: 1.5em;
+	color:#1409AE;
+}
+.segunda{
+	font-family: tahoma, sans-serif;
+	font-size: 1.2em;
+	color:#1E0FF5;
+	list-style: circle;
+}
+.tercera{
+	font-family: corsiva,corsive;
+	font-size: 0.9em;
+	list-style-image: url(flecha.png);
+
+}
+ul{
+	background-size: 50px;
+}

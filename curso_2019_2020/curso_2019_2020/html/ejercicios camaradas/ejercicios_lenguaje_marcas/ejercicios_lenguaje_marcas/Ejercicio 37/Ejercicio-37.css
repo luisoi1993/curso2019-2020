@@ -1,0 +1,30 @@
+#indice {
+	float:left;
+	width: 30%;
+}
+
+#Cuerpo {
+	float:right;
+	width:70%;
+
+}
+
+#Columna1 {
+	float:left;
+	width: 20%;
+	text-align: justify;	
+}
+
+#Columna2 {
+	float: left;
+	width: 20%;
+	margin-left: 15%;
+	text-align: justify;
+}
+
+#Columna3 {
+	float: right;
+	width:20%;
+	margin-right: 10%;
+	text-align: justify;	
+}

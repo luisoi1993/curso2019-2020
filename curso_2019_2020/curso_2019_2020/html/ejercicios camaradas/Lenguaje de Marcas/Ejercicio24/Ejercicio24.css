@@ -1,0 +1,32 @@
+body {
+	background-color:#81F781;
+}
+
+table {
+    width: 625px;
+}
+
+.principal {
+    border:3px solid #EAE5DB;
+    border-collapse:collapse;
+}
+
+.principal tr td {
+    border:3px solid #EAE5DB;
+	border-collapse:collapse;
+    text-align: center;
+}
+
+.primero {
+	background-color:#E2CDA1;
+   font-weight: bold;
+}
+
+.segundo {
+    background-color: #E6D963;
+    font-weight: bold;
+}
+
+.tercero {
+    background-image: url("fondo.jpg");
+}

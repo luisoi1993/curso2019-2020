@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="ejercicio_2_css.css" ?>
+ <!DOCTYPE cancion SYSTEM "DTD.DTD">
+
+<cancion duracion="4:47" anio="2008">
+
+
+<titulo>give it 2 me</titulo>
+
+<compositores>
+<nombres>pharrell</nombres>
+<apellido>williams</apellido>
+</compositores>
+
+<productores>
+<nombres>pharrell</nombres>
+<apellido>williams</apellido>
+</productores>
+
+<sello>warner bros records</sello>
+<artista>madonma</artista>
+</cancion>
+
+<cancion duracion="4:47" anio="2008">
+
+<titulo>give it 2 me</titulo>
+
+<productores>
+<nombres>pharrell</nombres>
+<apellido>williams</apellido>
+</productores>
+
+<compositores>
+<nombres>pharrell</nombres>
+<apellido>williams</apellido>
+</compositores>
+
+<compositores>
+<nombres>pharrell</nombres>
+<apellido>williams</apellido>
+</compositores>
+
+<sello>warner bros records</sello>
+<artista>madonma</artista>
+</cancion>
+
+
+
+
+

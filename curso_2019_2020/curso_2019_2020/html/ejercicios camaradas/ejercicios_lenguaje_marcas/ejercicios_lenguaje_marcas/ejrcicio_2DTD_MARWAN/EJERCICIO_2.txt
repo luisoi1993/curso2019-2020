@@ -1,0 +1,50 @@
+A-
+no hay ningun error.
+
+_______________________
+
+B-
+solucion:ponemos en el lugar de leche y pan ponemos item y cambiamos el attributo cantidad por nombre en el elemento leche porque esta definido como #required.
+
+<listaCompra>
+ <item nombre="12 litros" ></leche>
+ <item cantidad="3 barras de cuarto" />
+</listaCompra>
+
+_____________________________
+
+C-
+no hay ningun error.
+
+
+________________________________
+
+D-
+solucion:la refrencia entre el elemnto equipo y el elemnto jugaor no son los mismos 
+el attributo idrefs teine que tomar un valor iqual al que se hace refrencia con el. 
+
+
+<futbol>
+ <jugador nombre="Alfredo Di Stéfano" codigo="ads"/>
+ <jugador nombre="Edison Arantes do Nascimento" codigo="ean" />
+ <jugador nombre="Diego Armando Maradona" codigo="dam" />
+ <jugador nombre="Johan Cruyff" codigo="jc" />
+ <equipo nombre="Società Sportiva Calcio Napoli" jugador="Maradona" />
+ <equipo nombre="Futbol Club Barcelona" jugador="Cruyff, Maradona" />
+</futbol> 
+
+______________________________________
+
+E-
+solucion:
+<pelicula titulo="La diligencia"/>
+
+________________________________________
+
+F-
+soloucion:el attributo dni no existe.
+<persona />  
+_________________________________________
+
+
+ 

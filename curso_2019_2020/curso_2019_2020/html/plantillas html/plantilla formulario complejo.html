@@ -1,0 +1,35 @@
+<form id="identificador" method="post" action="" enctype="multipart/form-data">
+
+<fieldset>
+<legend>Título del formulario</legend>
+
+<label for="campo_texto">Campo de texto</label>
+<input id="campo_texto" name="campo_texto" type="text" maxlength="255" value=""/>
+
+
+<label for="campo_areatexto">Area de texto</label>
+<textarea id="campo_areatexto" name="campo_areatexto" rows="10" cols="50"></textarea>
+
+<label for="campo_desplegable">Lista desplegable</label>
+<select id="campo_desplegable" name="campo_desplegable">
+  <option value="0" selected="selected">- selecciona -</option>
+  <option value="1">Valor 1</option>
+  <option value="2">Valor 2</option>
+  <option value="3">Valor 3</option>
+</select>
+
+<label for="campo_fichero">Subir un fichero</label>
+<input id="campo_fichero" name="campo_fichero" type="file" value=""/>
+
+<input type="radio" id="valor1" name="campo_radio" value="valor1" checked="checked" />
+<label for="valor1">Valor 1</label>
+<input type="radio" id="valor2" name="campo_radio" value="valor2" />
+<label for="valor2">Valor 2</label>
+
+<input id="campo_check" name="campo_check" type="checkbox" value="valor1" checked="checked"/>
+<label for="campo_check">Campo check 1</label>
+
+<input id="boton_enviar" type="submit" value="Enviar formulario" />
+
+</fieldset>
+</form>

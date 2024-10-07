@@ -1,0 +1,35 @@
+div span{
+font-size:1.2em;
+font-family:arial;	
+}
+
+div.rojo{
+	position:absolute;
+	border:0px solid black;
+	background-color:#E5411E;
+	height:60%;
+	width:90%;
+	top:20%;
+	left:7%;
+	
+}
+
+div.azul{
+	position:absolute;
+	border:0px solid black;
+	background-color:#1E57E5;
+	height:55%;
+	width:85%;
+	top:22%;
+	left:10%;
+}
+
+div.verde{
+	position:absolute;
+	border:0px solid black;
+	background-color:#4BE51E;
+	height:48%;
+	width:78%;
+	top:25%;
+	left:13%;
+}

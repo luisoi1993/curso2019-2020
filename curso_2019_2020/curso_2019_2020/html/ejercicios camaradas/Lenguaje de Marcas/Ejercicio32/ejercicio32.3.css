@@ -1,0 +1,117 @@
+div {
+    position: absolute;
+    border: 3px solid #000000;
+    padding: 5px;
+    margin-top: 15%;
+    margin-left: 40%;
+}
+
+.casa{
+    width: 245px;
+    height: 195px;
+    background-color: #9b9b9b;
+}
+
+.tejado{
+    width: 267px;
+    bottom: 206px;
+    right: -14px;
+    height: 25px;
+    background-color: #ff0000;
+}
+
+.puerta{
+    top:99px;
+    height: 55px;
+    right: 95px;
+    background-color:#920000;
+}
+
+.ventana{
+    padding: 30px 30px 30px 30px;
+    bottom:110px;
+    right: 175px;
+    background-color: #0f5ce2;
+}
+
+.ventana2{
+    padding: 30px 30px 30px 30px;
+    bottom: 45px;
+    right: 15px;
+    background-color: #0f5ce2;
+}
+
+.casa:hover{
+    background-color: #43008e;
+}
+
+.rejatop{
+    border-bottom: 3px;
+    border-right: 3px;
+    border-left: 3px;
+    /*border: 3px solid #000000;*/
+    width: 56px;
+    height: 40px;
+    right: 15px;
+    top: 77px;
+}
+
+.rejatop2{
+    border-bottom: 3px;
+    border-right: 3px;
+    border-left: 3px;
+    /*border: 3px solid #000000;*/
+    width: 56px;
+    height: 40px;
+    right: 15px;
+    top: 100px;
+}
+
+.rejatop3{
+    border-bottom: 3px;
+    border-right: 3px;
+    border-left: 3px;
+    /*border: 3px solid #000000;*/
+    width: 56px;
+    height: 120px;
+    right: 175px;
+    top: 12px;
+}
+
+.rejatop4{
+    border-bottom: 3px;
+    border-right: 3px;
+    border-left: 3px;
+    /*border: 3px solid #000000;*/
+    width: 56px;
+    height: 100px;
+    right: 175px;
+    top: 35px;
+}
+
+.tejado:hover{
+    background-color: #f3ff00;
+}
+
+.puerta:hover{
+    background-color:#5d3200;
+    color:#ffffff;
+}
+
+.ventana:hover{
+    background-color:#26ff00;
+}
+
+.ventana2:hover{
+    background-color:#26ff00;
+}
+
+/*
+Todos los divs están posicionados de forma absoluta y constan de un borde negro de 3px, además de un padding de 5 px.
+ ¿Cuál será el tamaño del div ‘casa’?
+ Alinear el tejado con la casa, haciendo que coincidan el borde inferior del tejado con el borde superior de la casa. Para ello,
+deberá alterarse el estilo del div ‘tejado’.
+ El tejado deberá estar centrado en la casa. Para ello deberá alterarse el estilo del div ‘tejado’.
+ Definir una puerta de 50px de alto y 50px de ancho de color marrón y que quede centrada en la casa.
+ Definir 1 ‘ventana’ para cada una de las 2 plantas de la casa (30px x 30px)
+*/

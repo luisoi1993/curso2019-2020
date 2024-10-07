@@ -1,0 +1,64 @@
+-----------|
+codigo xml |
+-----------|
+<cancion duracion="4:47" anio="2008">
+
+<título>give it 2 me</titulo>
+
+<compositores>
+<nombres>pharrell</nombre>
+<apellido>williams</apellido>
+</compositores>
+
+<productores>
+<nombres>pharrell</nombre>
+<apellido>williams</apellido>
+</productores>
+
+<sello>warner bros records<sello>
+<artista>madonma</artista>
+</canion>
+
+<cancion duracion="4:47" anio="2008">
+
+<título>give it 2 me</titulo>
+
+<productores>
+<nombres>pharrell</nombre>
+<apellido>williams</apellido>
+</productores>
+
+<compositores>
+<nombres>pharrell</nombre>
+<apellido>williams</apellido>
+</compositores>
+
+<compositores>
+<nombres>pharrell</nombre>
+<apellido>williams</apellido>
+</compositores>
+
+<sello>warner bros records<sello>
+<artista>madonma</artista>
+</canion>
+
+********************************
+-----------|
+codigo DTD |
+-----------|
+<!doctype cancion [
+<!element cancion (título,(compositores*|productres?),(productores?|compositores*),sello,artista)>
+<!element compositor (nombre,apellido)>
+<!element productores (nombre,apellido)>
+<!element título (#pcdata)>
+<!element nombres (#pcdata)>
+<!element apellidos (#pcdata)>
+<!element sello (#pcdata)>
+<!element artista (#pcdata)>
+<!attlist cancion duracion cdata "">
+<!attlist cancion anio cdata "">
+]>
+
+
+
+

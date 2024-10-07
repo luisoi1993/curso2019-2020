@@ -1,0 +1,45 @@
+.cabecera {
+	width: 100%;
+	height: 15%;
+	background-color: #F5A9A9;
+	position: absolute;
+	top:0%;
+	left: 0%;
+}
+
+.indice {
+	width: 20%;
+	height: 80%;
+	position: absolute;
+	top:17%;
+	left:0.2%;
+	background-color:#BCF5A9;
+	list-style-type: none;
+}
+
+.contenido {
+	width:80%;
+	height:80%;
+	position:absolute;
+	top:19%;
+	left:25%;
+	overflow: hidden;
+
+}
+
+div div {
+	height:100%;
+	width:100%;
+	background-color: #A9E2F3;
+}
+
+.listaEnlaces{
+	list-style-type: none;
+}
+
+.enlacesI {
+	font-size:1.5em;
+	font-family:"Gill Sans Extrabold", Helvetica, sans-serif;
+	text-align: justify;
+	line-height: 3em;
+}

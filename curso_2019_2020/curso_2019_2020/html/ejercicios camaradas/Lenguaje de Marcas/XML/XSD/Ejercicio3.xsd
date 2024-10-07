@@ -1,0 +1,52 @@
+<!--Dado el siguiente documento XML, escribe el esquema correspondiente XSD
+<?xml version="1.0" encoding="UTF-8"?>
+<marcadores xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="marcadores.xsd">
+ <pagina>
+	<nombre>Abrirllave</nombre>
+	<descripcion>Tutoriales de inform�tica.</descripcion>
+	<url>http://www.abrirllave.com/</url>
+ </pagina>
+ <pagina>
+	<nombre>Wikipedia</nombre>
+	<descripcion>La enciclopedia libre.</descripcion>
+	<url>http://www.wikipedia.org/</url>
+ </pagina>
+ <pagina>
+	<nombre>W3C</nombre>
+	<descripcion>World Wide Web Consortium.</descripcion>
+	<url>http://www.w3.org/</url>
+ </pagina>
+</marcadores> -->
+
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="pagina">
+    	<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="nombre" type="xsd:string"/>
+				<xsd:element name="descripcion" type="xsd:string"/>
+				<xsd:element name="url" type="xsd:anyURI"/>
+			</xsd:sequence>
+   		</xsd:complexType>
+    </xsd:element>
+</xsd:schema>
+
+<!--DOCTYPE factura[
+	<!ELEMENT factura(cabecera,vendedor,pedido)>
+	<!ELEMENT cabecera (#PCDATA)>
+	<!ELEMENT vendedor (#PCDATA)>
+		<!ELEMENT vendedor(identificador,nombre)>
+			<!ELEMENT identificador (#PCDATA)>
+			<!ELEMENT nombre (#PCDATA)>
+	<!ELEMENT pedido (#PCDATA)>	
+]-->
+
+<factura>
+    <cabecera>Factura Mes Marzo</cabecera>
+    <vendedor>
+        <identificador>1</identificador>
+        <nombre>Nombre</nombre>
+    </vendedor>
+    <pedido>Pedido1</pedido>
+</factura>

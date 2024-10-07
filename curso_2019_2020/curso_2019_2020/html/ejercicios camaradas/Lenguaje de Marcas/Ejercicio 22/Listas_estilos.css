@@ -1,0 +1,23 @@
+.cuerpo {
+	font-family:Arial;
+	color:#00B957;
+	background-image:url("fondo.jpg");
+	margin-left:100px;
+}
+
+.listdesord {
+	list-style-type:circle;
+	color:#D8FF00;
+	font-size:1.5em;
+}
+
+.listord {
+	list-style-type:upper-latin;
+	color:#00FF13;
+	font-size:2em;
+}
+
+.imagen {
+	list-style-image:url("copa.gif");
+	color:#00FFF0;
+}

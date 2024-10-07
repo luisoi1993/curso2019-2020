@@ -1,0 +1,74 @@
+body {
+	background-color:#81F781;
+}
+
+table {
+    width: 625px;
+}
+
+.principal {
+    border:3px solid #EAE5DB;
+    border-collapse:collapse;
+	margin:auto;
+}
+
+.principal tr td {
+    border:3px solid #EAE5DB;
+	border-collapse:collapse;
+    text-align: center;
+}
+
+.primero {
+	background-color:#E2CDA1;
+    font-weight: bold;
+}
+
+.segundo {
+    background-color: #E6D963;
+    font-weight: bold;
+}
+
+.tercero {
+    background-image: url("../RECURSOS/fondo.jpg");
+}
+
+.tabla5 tr td  {
+	border:3px solid black;
+	border-collapse:collapse;
+	border-color:#035C63;
+}
+
+.tabla5 {
+	border:3px solid black;
+	border-collapse:collapse;
+	border-color:#035C63;
+	margin-right:0px;
+	margin-left:auto;
+}
+
+.zodiaco {
+	text-align:center;
+	margin-top:60px;
+	margin-bottom:30px;
+	border: 3px solid #A4A4A4;
+	border: 3px solid #A4A4A4;
+	background-color:#BF00FF;
+}
+
+.zodiaco tr td{
+	border: 3px solid #A4A4A4;
+	border: 3px solid #A4A4A4;
+	background-color:#BF00FF;
+}
+
+.tierra {
+	margin-bottom:25px;
+	border: 3px solid #A4A4A4;
+	background-color:#BF00FF;
+}
+
+.agua {
+	margin-bottom:25px;
+	border: 3px solid #A4A4A4;
+	background-color:#BF00FF;
+}

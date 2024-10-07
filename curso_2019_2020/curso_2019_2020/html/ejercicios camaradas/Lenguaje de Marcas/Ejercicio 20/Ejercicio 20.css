@@ -1,0 +1,36 @@
+.principal {
+	background-image:url("fondoprincipal.jpg");
+	color:white;
+	margin-left:100px;
+	margin-right:200px;
+	font-family:Courier;
+}
+
+.barra {
+	height:5px;
+	background-color:red;
+}
+
+.titulo {
+	text-align:center;
+}
+
+.titulo2 {
+	font-size:30px;
+}
+
+.titulo3 {
+	font-size:20px;
+}
+
+.titulo4 {
+	font-size:40px;
+}
+
+.parrafo1 {
+	font-family:Impact;
+}
+
+.parrafo2 {
+	font-family:Comic Sans MS;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE pedidos[
+    <!ELEMENT nombre(pedido)>
+    <!ELEMENT pedido((empresa | cliente), producto?, fecha, factura)>
+        <!ELEMENT cliente (#PCDATA)>
+            <!ATTLIST cliente NIF ID '#REQUIERED'>
+        <!ELEMENT empresa (#PCDATA)>
+            <!ATTLIST empresa CIF ID '#REQUIERED'>
+            <!ATTLIST empresa sector NMTOKEN '#IMPLIED'
+                              actividad NMTOKENS '#IMPLIED'
+        <!ELEMENT producto (#PCDATA)>
+        <!ELEMENT fecha (#PCDATA)>
+        <!ELEMENT factura (#PCDATA)
+            <!ELEMENT factura(emisor, total, fecha)>
+                <!ATTLIST factura numfactura ID '#REQUIERED'
+                                  cliente empresa IDREFS '#REQUIERED'
+                                  productos empresa IDREFS '#REQUIERED'>
+]>
+
+<!-- 
+Crea un documento XML que almacene pedidos de clientes, y diseña en un documento
+independiente su esquema DTD con las restricciones que se indican a continuación:
+Contendrá 1 o varios elementos de nombre pedido.
+El elemento pedido se compondrá de: empresa o cliente que realiza el pedido (uno u otro pero
+no dos en el mismo pedido), productos solicitados (al menos uno), fecha, y opcionalmente un
+elemento llamado factura.
+El elemento empresa será de tipo PCDATA y tendrá un atributo llamado CIF como
+identificador único.
+El elemento persona será de tipo PCDATA y tendrá un atributo llamado NIF como
+identificador único.
+El elemento producto será de tipo PCDATA.
+El elemento fecha será de tipo PCDATA.
+El elemento factura se compone a su vez de los elementos emisor, total y fecha. Además
+tendrá tres atributos: numfactura que será identificador único; cliente (obligatorio) que
+referenciará a la empresa o cliente que aparece en el elemento pedido; y productos que
+referenciará a uno varios identificadores de producto.
+Comprobar la validez de los valores de atributos ID, IDREF e IDREFS.
+Incorporar una entidad interna general con el nombre "MiEmpresa" y el texto “Esta es mi
+Empresa”, y utilizarla para indicar el valor de emisor en el elemento factura del documento
+XML.
+Agregar dos nuevos atributos al elemento empresa: sector de tipo NMTOKEN y actividad de
+tipo NMTOKENS. El tipo NMTOKEN sólo puede contener letras, dígitos, punto [ . ], guión
+[ - ], subrayado [ _ ] y dos puntos [ : ] . El tipo NMTOKENS pueden contener los mismos
+caracteres que NMTOKEN más espacios en blanco. Un espacio en blanco consiste en uno o
+más espacios, retornos de carro o tabuladores. Comprobarlo introduciendo valores erróneos
+para los nuevos atributos. -->

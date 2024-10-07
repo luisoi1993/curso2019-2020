@@ -1,0 +1,14 @@
+#izquierda{
+    float: left;
+    width: 20%;
+    margin-bottom: 10%;
+}
+
+#derecha{
+    float: left;
+    width: 20%;
+}
+
+body{
+	background-color: #1B9FCF;
+}

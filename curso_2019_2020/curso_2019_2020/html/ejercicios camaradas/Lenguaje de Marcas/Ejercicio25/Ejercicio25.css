@@ -1,0 +1,23 @@
+table {
+	border: 3px solid #A4A4A4;
+	background-color:#BF00FF;
+}
+
+.zodiaco {
+	text-align:center;
+	margin-top:60px;
+	margin-bottom:30px;
+	border: 3px solid #A4A4A4;
+}
+
+.zodiaco tr td{
+	border: 3px solid #A4A4A4;
+}
+
+.tierra {
+	margin-bottom:25px;
+}
+
+.agua {
+	margin-bottom:25px;
+}

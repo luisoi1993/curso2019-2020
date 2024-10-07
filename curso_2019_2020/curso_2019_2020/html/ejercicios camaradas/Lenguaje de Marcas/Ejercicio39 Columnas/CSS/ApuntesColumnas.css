@@ -1,0 +1,44 @@
+#caja{
+    /*Para Chrome, Opera y Safari*/
+    -webkit-column-count: 3;
+    -moz-column-count:3;/*Para Mozilla Firefox*/
+    column-count: 3;
+    
+    /*Determina el espacio que hay entre las columnas
+    Pueden tomar valores numéricos, pero el más normal 
+    sería rem(em)*/
+    -webkit-column-gap: 3rem;
+    -moz-column-gap: 3rem;
+    column-gap: 3rem;
+	
+    /*Muestra una línea vertical entre las columnas*/
+    -webkit-column-: 3rem dashed #189918;
+    -moz-column-: 3rem dashed #189918;
+    column-rule:  3rem dashed #189918 ;
+
+    /*Establece el ancho mínimo de cada columna ajustando el numero de columnas al espacio disponible
+    Permite cualquier unidad de medida válida en CSS*/
+    -webkit-column-width: ;
+    -moz-column-width: ;
+    column-width: ;
+
+    /*Especifica cuantas columnas debe ocupar un elemento. Su valorpuede ser auto o all
+    Se aplica a todos los elementos de bloque, es decir, que no se puede aplicar a un elemtno de línea
+    Para que una imágen ocupe todas las columnas es conveniente que la visualizacion de la imagen sea en bloque*/
+    -webkit-column-span: ;
+    column-span: ;
+
+    /*Especifica como llenar las columnas , equilibradas o no equilibradas
+    LOs valores pueden ser 
+    (auto: hasta que una columna no está completa, no empieza a poner texto en la siguiente. Para que esto funcione bien la caja tiene
+    que tener establecidos dimensiones)
+    (balanced: reparte el texto entre el número de columnas para que tengas +- el mismo texto)*/
+    -moz-column-fill: ;
+    column-fill: ;
+}
+
+/*
+    -webkit-column-: ;
+    -moz-column-: ;
+    column-: ;
+*/

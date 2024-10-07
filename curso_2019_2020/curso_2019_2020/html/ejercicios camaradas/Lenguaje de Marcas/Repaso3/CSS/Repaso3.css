@@ -1,0 +1,59 @@
+.nivel1{
+	list-style-type:upper-alpha;
+	color:#F0FF0A;
+}
+
+.nivel2{
+	list-style-image:url("../RECURSOS/flecha.jpg");
+	color:#15FF0A;
+}
+
+.nivel3{
+	list-style-image:url("../RECURSOS/cruz.jpg");
+	color:#D400DE;
+}
+
+.nivel4{
+	list-style-image:url("../RECURSOS/bola.jpg");
+	color:#000ADE;
+}
+
+body{
+	background-color:#E24D21;
+	background-image:url("../RECURSOS/fondo.jpg");
+	background-repeat:repeat-y;
+	font-family:Arial;
+	font-size:1.5em;
+}
+
+.parrafo1{
+	margin-top:3em;
+	padding:3pt;
+	text-align:justify;
+	font-family:default;
+}
+
+.parrafo2{
+	margin:2em;
+	background-color:#35C4F1;
+}
+
+.resalto{
+	color:#FF0000;
+	font-size:1.2em;
+	margin-left:3pt;
+	margin-right:3pt;
+}
+
+h1{
+	font-family:"Times New Roman";
+	font-size:2em;
+	color:#0A67FF;
+	letter-spacing:0.75em;
+	margin-left:75px;
+	border-bottom: 3px groove #35C4F1;
+}
+
+.lista{
+	margin-left:100px;
+}

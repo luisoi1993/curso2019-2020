@@ -1,0 +1,28 @@
+body{
+    height: 100em;
+    margin: auto;
+}
+
+#primero{
+    height: 20%;
+    width: 96%;
+    background-color: #60d34c;
+    border: 2% solid #000000;
+}
+
+#segundo{
+    height: 79%;
+    width: 98%;
+    background-color:#d15050;
+}
+
+.imagen{
+    width: 20%;
+    height: 75%;
+    float: left;
+}
+
+.parrafo{
+    float: left;
+    font-size: 4em;
+}

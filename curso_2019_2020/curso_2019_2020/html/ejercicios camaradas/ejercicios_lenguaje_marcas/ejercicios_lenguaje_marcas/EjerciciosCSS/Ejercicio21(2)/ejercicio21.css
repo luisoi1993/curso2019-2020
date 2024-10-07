@@ -1,0 +1,17 @@
+.primera{
+	font-size: 3em;
+	list-style-type: circle;
+}
+.segunda{
+	font-size: 2.5em;
+	list-style-type: lower-roman;
+}
+.tercera{
+	font-size: 2em;
+	list-style-type: square;
+}
+.cuarta{
+	font-size: 1.5em;
+	color: #1409ae;
+	list-style-image: url(flecha.png);
+}

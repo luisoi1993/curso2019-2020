@@ -1,0 +1,37 @@
+body {
+	background-color: #154360;
+}
+
+hr {
+	clear: both;
+	border: 2px solid #d68910;
+}
+
+h1 {
+	font-family: "calibri", Garamond, 'Comic Sans'; 
+	text-align: center;
+}
+
+div {
+	background-color: #85c1e9;
+	text-align: justify;
+}
+
+#F1{
+	float:right;
+}
+
+#F2 {
+	float:left;
+}
+
+#C1 {
+	float: right;
+}
+
+#C2 {
+	float: left;
+}
+
+
+

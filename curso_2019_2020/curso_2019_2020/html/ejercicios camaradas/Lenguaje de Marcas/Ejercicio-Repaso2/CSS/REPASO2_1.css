@@ -1,0 +1,41 @@
+.nivel1{
+	list-style:lower-alpha;
+	color:#097349;
+	font-weight:bold;
+	font-size:25px;
+}
+
+.nivel2{
+	list-style:georgian;
+	color:#FF00D8;
+	font-weight:bold;
+	font-size:20px;
+}
+
+.nivel3{
+	list-style:lower-greek;
+	color:#00FF80;
+	font-weight:bold;
+	font-size:15px;
+}
+
+.nivel4{
+	list-style:upper-alpha;
+	color:#B40000;
+	font-weight:bold;
+	font-size:10px;
+}
+
+.niveldef1{
+	list-style:none;
+	color:#00BBC1;
+	font-weight:bold;
+	font-size:18px;
+}
+
+.niveldef2{
+	list-style:none;
+	color:#7F5985;
+	font-weight:bold;
+	font-size:12px;
+}

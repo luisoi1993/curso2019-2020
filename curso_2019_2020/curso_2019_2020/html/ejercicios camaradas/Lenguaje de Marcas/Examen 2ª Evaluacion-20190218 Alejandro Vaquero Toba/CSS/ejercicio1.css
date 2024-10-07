@@ -1,0 +1,80 @@
+body{
+    font-family: sans-serif;
+    text-align: center;
+    background-image:url(../imagenes/bg_340394.png);
+    background-color: #df96d2;
+}
+
+h1 {
+    text-align: inherit;
+    color:#630081;
+}
+
+p{
+    color:#fff;
+    font-weight: bold;
+}
+
+#primero{
+    text-align: inherit;
+    border: 1px solid #000000;
+    background-color: #61a3bd;
+    margin:auto;
+    width:70%;
+    padding-top:10px;
+    padding-bottom: 25px;
+}
+
+#segundo{
+    position: absolute;
+    text-align: inherit;
+    border: 1px solid #000000;
+    background-color: #be5656;
+    margin-left:12%;
+    width:25%;
+    height:12%;
+}
+
+#tercero{
+    position: absolute;
+    text-align: inherit;
+    border: 1px solid #000000;
+    background-color: #c7be42;
+    margin-left: 58%;
+    width:29%;
+    height:12%;
+}
+
+#cuarto{
+    position: absolute;
+    text-align: inherit;
+    border: 1px solid #000000;
+    background-color: #2e8e9b;
+    margin-left: 12%;
+    width:25%;
+    height:7em;
+    margin-top: 12%;
+}
+
+#quinto{
+    position: absolute;
+    text-align: inherit;
+    border: 1px solid #000000;
+    background-color: #7bbda7;
+    margin-left: 57%;
+    width:30%;
+    height:7em;
+    margin-top: 12%;
+}
+
+#sexto{
+    position: absolute;
+    text-align: inherit;
+    border: 1px solid #000000;
+    background-color: #aadb7b;
+    top:20%;
+    margin-left:35%;
+    width:25%;
+    height:5em;
+    height: 15%;
+}

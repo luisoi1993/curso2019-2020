@@ -1,0 +1,33 @@
+cancion,titulo,compositores,productores,sello,artista{
+    display: block;
+}
+
+nombre,apellidos{
+    display: inline;
+}
+
+cancion{
+    margin-left: 30%;
+    margin-top: 15%; 
+}
+
+titulo{
+    margin-bottom: 1%;
+    padding-left: 5%;
+    border-bottom: 2px solid #243eb1;
+    margin-right: 80%;
+}
+
+nombre,apellidos{
+    text-align: center;
+    padding: 2%;
+}
+
+titulo{
+    font-weight: bold;
+}
+
+artista,sello{
+    margin-right: 80%;
+    text-align: center;
+}

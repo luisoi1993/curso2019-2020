@@ -1,0 +1,138 @@
+A-
+sulocion1:
+MODIFICAMOS EL XML :
+<numeros>
+ <numeros>25</numeros>
+ </numeros> 
+
+
+sulocion2:
+modificamos el DTD:
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE numeros [
+<!ELEMENT numeros (numero)>
+<!Element numero(#pcdata)>
+]> 
+
+__________________________________________-
+
+B-
+sulocion:
+modificamos el DTD:
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE letras [
+ <!ELEMENT letras (letra)*>
+ <!ELEMENT letra (#PCDATA)>
+]> 
+
+_______________________________________________
+
+c-
+sulocion:
+modificamos el DTD:tenemos que poner el #pcdata al elemento raiz colores.
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE colores [
+<!ELEMENT colores (#PCDATA)>
+<!ELEMENT colores (color*)>
+<!ELEMENT color (#PCDATA)>
+]> 
+
+______________________________________________________
+
+D-
+sulocion:
+MODIFICAMOS EL XML :como puesto en DTD flor+ tenemos poner al menos un elemnto flor dentro del elemento raiz
+<flores>
+<flor>..</flor>
+</flores> 
+
+_________________________________________________________
+
+E-
+sulocion:
+modificamos el DTD:TENEMOS QUE POner los elemntos <perro>Caniche</perro> y <gato>Siamés</gato> con #pcdata a cada una
+ 
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE animales [
+ <!ELEMENT animales (animal*)>
+ <!ELEMENT animal (perro,gato)>
+<!ELEMENT perro (#pcdata)>
+<!ELEMENT gato (#pcdata)>
+]> 
+
+_____________________________________________________________
+
+F-
+sulocion:
+MODIFICAMOS EL XML:que los elementos <nombre> <nacimiento> que no estan en orden como estan en el codigo DTD.
+
+<escritores>
+
+ <escritor>
+ <nombre>Mario Vargas LLosa</nombre>
+ <nacimiento>28 de marzo de 1936</nacimiento>
+ </escritor>
+
+ <escritor>
+ <nombre>Mario Vargas LLosa</nombre>
+ <nacimiento>28 de marzo de 1936</nacimiento>
+ </escritor>
+
+</escritores> 
+
+___________________________________________________________
+
+
+G-
+sulocion:
+MODIFICAMOS EL XML :como esta escrito en el DTD <!ELEMENT musico ((nombre | apodo), fechaNacimiento)>  tenemos que poner una de los dos nombre o apodo con una fecha nacemiento.
+
+<musicos>
+ <musico>
+ <nombre>Antonio Vivaldi</nombre>
+ <fechaNacimiento>4 de marzo de 1678</fechaNacimiento>
+ </musico>
+
+ <musico>
+ <apodo>El viejo peluca</apodo>
+ <fechaNacimiento>21 de marzo de 1685</fechaNacimiento>
+ </musico>
+</musicos> 
+
+___________________________________________________________
+
+H-
+sulocion:
+MODIFICAMOS EL XML:como esta escrito en el DTD tenemos que poner el elemento  <telefonoMovil> al menos una vez en cada grupo en contactos y el elemento  <telefonoFijo> se puede repitir varios en cada grupo.
+
+
+<agenda>
+
+ <contacto>
+ <nombre>Ayuntamiento</nombre>
+ <telefonoFijo>010</telefonoFijo>
+ <telefonoMovil>..</telefonoMovil>
+ </contacto>
+
+ <contacto>
+ <nombre>Emergencias</nombre>
+ <telefonoFijo>112 (Unión Europea)</telefonoFijo>
+ <telefonoMovil>Desconocido</telefonoMovil>
+ <telefonoFijo>911 (Estados Unidos)</telefonoFijo>
+ </contacto>
+
+</agenda>  
+
+____________________________________________________
+
+I-
+sulocion:
+MODIFICAMOS EL XML:como esta escrito en el DTD LOS ELEMENTOS <planeta> <satelite> <asteroide> SOLO PUEDEN REPETIR UNA VEZ EN CADA GRUPO DEL ELEMENTO <CUERPO> Y ADEMÁS EL ELEMNTO  <asteroide>Ceres</asteroide> tiene que ser dentro del elemento <cuerpo>.
+
+<sistemaSolar>
+
+ <cuerpo>
+ <satelite>Luna</satelite>
+ </cuerpo>
+
+</sistemaSolar> 

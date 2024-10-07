@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Ejercicio 7</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../CSS/ejercicio7.css"/>
+</head>
+
+<body>
+<!-- Primer Formulario -->
+<h1>Formulario 1</h1>
+<h3>Rellena tu CV</h3>
+<form>
+  <fieldset>
+    <legend>Datos Personales</legend>
+    Provincias <br/>
+	  
+    <select name="Provincias">
+      <option value="selecciona">- Selecciona -</option>
+      <option value="madrid">Madrid</option>
+      <option value="aranjuez">Aranjuez</option>
+    </select>
+    
+    <br/>
+    <br/>
+	  
+    Fecha de Nacimiento<br/>
+    <input type="number">
+    de
+    <select name="meses">
+      <option value="enero">Enero</option>
+      <option value="febrero">Febrero</option>
+      <option value="marzo">Marzo</option>
+      <option value="abril">Abril</option>
+      <option value="mayo">Mayo</option>
+      <option value="junio">Junio</option>
+      <option value="julio">Julio</option>
+      <option value="agosto">Agosto</option>
+      <option value="septiembre">Septiembre</option>
+      <option value="octubre">Octubre</option>
+      <option value="noviembre">Noviembre</option>
+      <option value="diciembre">Diciembre</option>
+    </select>
+    de
+    <input type="text">
+    <br/>
+    <br/>
+    Temas de Interés<br/>
+    <select name="interes" size="5" multiple>
+      <option value="datos">Administración de Bases de Datos</option>
+      <option value="analisis">Analisis y Programación</option>
+      <option value="arquitectura">Arquitectura</option>
+      <option value="calidad">Calidad</option>
+      <option>ERP, CRM. Business Intelligence</option>
+    </select>
+  </fieldset>
+</form>
+	
+<br/>
+<br/>
+
+<!-- Segundo Formulario -->
+<h1>Formulario 2</h1>
+<h3>Información sobre el Producto</h3>
+<form>
+  <fieldset>
+    <legend>Datos Básicos</legend>
+    Nombre
+    <input type="text">
+    <br/>
+    Descripción<br/>
+    <textarea name="Descripcion" cols="45" rows="5"></textarea>
+    <br/>
+    <br/>
+    Foto
+    <input type="file" value="Seleccionar Archivo">
+    <br/>
+    <br/>
+    Añadir contador de visitas
+    <input type="checkbox">
+  </fieldset>
+</form>
+	
+<form>
+  <fieldset>
+    <legend>Datos Económicos</legend>
+    Precio
+    <input type="text">
+    €
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Impuestos
+    <select name="impuestos" size="1">
+      <option value="4%">4%</option>
+    </select>
+    <br/>
+    <br/>
+    Promoción <br/>
+    <input type="radio" name="elegir">
+    Ninguno <br/>
+    <input type="radio" name="elegir">
+    Transporte Gratuito <br/>
+    <input type="radio" name="elegir">
+    Descuento 5%
+  </fieldset>
+</form>
+	
+<h3>Rellena tu CV</h3>
+	
+<form>
+  <fieldset>
+    <legend>Datos Personales</legend>
+    Provincias <br/>
+    <select name="Provincias">
+      <option value="selecciona">- Selecciona -</option>
+      <option value="madrid">Madrid</option>
+      <option value="aranjuez">Aranjuez</option>
+    </select>
+	  
+    <br/>
+    <br/>
+	  
+    Fecha de Nacimiento<br/>
+    <input type="number">
+    de
+    <select name="meses">
+      <option value="enero">Enero</option>
+      <option value="febrero">Febrero</option>
+      <option value="marzo">Marzo</option>
+      <option value="abril">Abril</option>
+      <option value="mayo">Mayo</option>
+      <option value="junio">Junio</option>
+      <option value="julio">Julio</option>
+      <option value="agosto">Agosto</option>
+      <option value="septiembre">Septiembre</option>
+      <option value="octubre">Octubre</option>
+      <option value="noviembre">Noviembre</option>
+      <option value="diciembre">Diciembre</option>
+    </select>
+    de
+    <input type="text">
+	  
+    <br/>
+    <br/>
+	  
+    Temas de Interés<br/>
+    <select name="interes" size="5" multiple>
+      <option value="datos">Administración de Bases de Datos</option>
+      <option value="analisis">Analisis y Programación</option>
+      <option value="arquitectura">Arquitectura</option>
+      <option value="calidad">Calidad</option>
+      <option>ERP, CRM. Business Intelligence</option>
+    </select>
+  </fieldset>
+</form>
+	
+<br/>
+<br/>
+<br/>
+	
+<div id="izquierda">
+  <form>
+    <fieldset>
+      <legend>Alta en el Servicio</legend>
+      Nombre<br/>
+      <input type="text">
+      <br/>
+      Apellidos<br/>
+      <input type="text">
+      <br/>
+      DNI<br/>
+      <input type="text">
+      <br/>
+      Contraseña<br/>
+      <input type="password">
+    </fieldset>
+  </form>
+</div>
+	
+<div id="derecha">
+  <form>
+    <fieldset>
+      <legend>Alta en el Servicio</legend>
+      Telefono<br/>
+      <input type="text">
+      <br/>
+      Email<br/>
+      <input type="text">
+      <br/>
+      Dirección<br/>
+      <input type="text">
+      <br/>
+      Código Postal<br/>
+      <input type="text">
+    </fieldset>
+  </form>
+</div>
+</body>
+</html>
+
+<!--
+    <input type="checkbox">
+    <input type="submit">
+-->

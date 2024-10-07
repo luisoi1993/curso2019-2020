@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/css" href="ejercicio_1-A_css.css" ?>
+<biblioteca>
+
+<libro>
+<titulo>la vida esta en otra parte</titulo>
+<autor>milan kundera</autor>
+<fecha>1973</fecha>
+</libro>
+
+
+
+<libro>
+<titulo>pantaléon y las vistidores</titulo>
+<autor>mario vargas</autor>
+<fecha>1973</fecha>
+</libro>
+
+
+
+<libro>
+<titulo>conversación en la catedral</titulo>
+<autor>mario vegas</autor>
+<fecha>1969</fecha>
+</libro>
+
+
+</biblioteca>

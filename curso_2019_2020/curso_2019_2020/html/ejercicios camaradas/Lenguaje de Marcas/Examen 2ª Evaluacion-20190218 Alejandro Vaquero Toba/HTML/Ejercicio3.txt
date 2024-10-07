@@ -1,0 +1,37 @@
+PARTE A
+a:
+h1,h2,p{
+	color: blue;
+	margin-top:3em;
+}
+
+b:
+div p span{
+	color: red;
+	font-size: 2em;
+}
+
+c:
+#miclase p{
+	font-size:1.5em;
+}
+
+d:
+#class2 .clase1{
+	font-weight: bold;
+}
+
+e:
+#armario .ropa span{
+	float: left;
+}
+
+PARTE B
+
+a:
+En la propia etiqueta del <html> ponemos <h1 class="clase1 clase2">Hola</h1> pero el orden lo ponemos dependiendo de que queremos que coga si 
+alguno de los atributos se repite.
+
+b:
+Cogemos el párrafo del que queremos cambiar el color y le ponemos una clase, al ya tener <p> con formatos y demás se cambiará igualmente 
+porque se lo estás especificando.

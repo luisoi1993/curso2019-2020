@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href=""?>
+<!--DOCTYPE pedidos SYSTEM "ejercicio1.dtd" EXTERNO-->
+<?xml-stylesheet href="ejercicio1.css"?>
+
+<!DOCTYPE pedidos[
+    <!ELEMENT nombre (pedido)*>
+    <!ELEMENT pedido ((empresa | cliente), producto?, fecha, factura)>
+        <!ELEMENT cliente (#PCDATA)>
+            <!ATTLIST cliente NIF ID '#REQUIERED'>
+        <!ELEMENT empresa (#PCDATA)>
+            <!ATTLIST empresa CIF ID '#REQUIERED'>
+            <!ATTLIST empresa sector NMTOKEN '#IMPLIED'>
+            <!ATTLIST empresa actividad NMTOKENS '#IMPLIED'>
+        <!ELEMENT producto (#PCDATA)>
+        <!ELEMENT fecha (#PCDATA)>
+        <!ELEMENT factura (#PCDATA)>
+            <!ELEMENT factura (emisor, total, fecha)>
+                <!ATTLIST factura numfactura ID '#REQUIERED'>
+                <!ATTLIST factura cliente IDREFS '#REQUIERED'>
+                <!ATTLIST factura empresa IDREFS '#REQUIERED'>
+    <!ENTITY MiEmpresa "Esta Es Mi Empresa">           
+]>
+
+<pedidos>
+    <nombre>
+        <pedido>
+            <empresa CIF="250"> &MiEmpresa; </empresa>
+            <producto>Movil</producto>
+            <fecha>08/04/2019</fecha>
+            <factura numfactura="1" cliente="Yo" productos="moviles"></factura>
+        </pedido>
+        <pedido>
+            <empresa CIF="251"> &MiEmpresa; </empresa>
+            <producto>Tablet</producto>
+            <fecha>10/04/2019</fecha>
+            <factura numfactura="1" cliente="Yo" productos="tablets"></factura>
+        </pedido>
+        <pedido>
+            <empresa CIF="252"> &MiEmpresa; </empresa>
+            <producto>Smartwatch</producto>
+            <fecha>10/04/2019</fecha>
+            <factura numfactura="1" cliente="Yo" productos="relojes"></factura>
+        </pedido>
+    </nombre>
+</pedidos>

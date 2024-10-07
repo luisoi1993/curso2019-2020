@@ -1,0 +1,12 @@
+#caja{
+    /*Para Chrome, Opera y Safari*/
+    -webkit-column-count: 2;
+    /*Para Mozilla Firefox*/
+    -moz-column-count:2;
+    column-count: 2;   
+}
+h1{
+    -webkit-column-span: all;
+    column-span: all;
+    text-align:center;
+}

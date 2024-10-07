@@ -1,0 +1,19 @@
+body{
+	background-color:green;
+}
+
+table{
+	width: 625px;
+}
+
+.principal{
+	border:3px solid  #EAE5DB;
+	border-collapse:collapse;
+	
+}
+
+.principal tr td th{ 
+	border:3px solid #EAE5DB;
+	border-collapse:collapse;
+    text-align: center;
+}

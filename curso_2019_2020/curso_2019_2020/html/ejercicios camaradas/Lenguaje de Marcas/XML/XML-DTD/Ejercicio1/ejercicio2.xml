@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="ejercicio2.css"?>
+
+<!DOCTYPE cancion[
+    <!ELEMENT cancion (titulo, compositores, productores, sello, artista)*>
+        <!ELEMENT titulo (#PCDATA)>
+        <!ELEMENT compositores (#PCDATA)>
+        <!ELEMENT productores (#PCDATA)>
+        <!ELEMENT sello (#PCDATA)>
+        <!ELEMENT artista (#PCDATA)>
+            <!ELEMENT compositores (compositor)>
+                <!ELEMENT compositor (nombre,apellidos)>
+                    <!ELEMENT nombre (#PCDATA)>
+                    <!ELEMENT apellidos (#PCDATA)>
+            <!ELEMENT productores (productor)>
+                <!ELEMENT productor (nombres,apellidos)*>
+                    <!ELEMENT nombres (#PCDATA)>
+                    <!ELEMENT apellidos (#PCDATA)>
+    <!ATTLIST cancion duracion CDATA '#REQUIERED'>
+    <!ATTLIST cancion anio CDATA '#REQUIERED'>
+]>
+
+<cancion>
+    <titulo>Give It 2 me</titulo>
+
+    <compositores>
+        <compositor>
+            <nombre>Pharrell</nombre>
+            <apellidos>Williams</apellidos>
+        </compositor>
+    </compositores>
+
+    <productores>
+        <productor>
+            <nombre>Pharrell</nombre>
+            <apellidos>Williams</apellidos>
+        </productor>
+    </productores>
+
+    <sello>Warner Bros. Records</sello>
+    <artista>Madonna</artista>
+
+</cancion>

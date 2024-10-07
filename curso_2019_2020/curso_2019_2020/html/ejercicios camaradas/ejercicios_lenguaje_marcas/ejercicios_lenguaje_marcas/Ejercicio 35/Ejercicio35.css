@@ -1,0 +1,35 @@
+#Primera {
+	background-color: #610B38;
+	width: 15%;
+	height: 200px;
+	float: left;
+	margin-top:10%;
+	text-align: center;
+	margin-left: 5px;
+}
+
+#Segunda {
+	background-color: #0B3B39;
+	width: 35%;
+	height: 200px;
+	text-align: center;
+	margin-left: 5px;
+}
+
+#Tercera {
+	background-color:#2E2E2E;
+	width: 35%;
+	height: 200px;
+	text-align: center;
+	margin-left: 5px;
+}
+
+.p23 {
+	color: #FFFFFF;
+	padding-top: 85px;
+}
+
+.p1 {
+	color: #FFFFFF;
+	padding-top: 70px;
+}

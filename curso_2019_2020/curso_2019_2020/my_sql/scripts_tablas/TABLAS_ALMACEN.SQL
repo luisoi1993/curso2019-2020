@@ -1,0 +1,226 @@
+
+#*** TABLAS ARTICULOS, TIENDAS, FABRICANTES, PEDIDOS y VENTAS:********
+
+CREATE DATABASE ALMACEN;
+USE ALMACEN; 
+
+CREATE TABLE ARTICULOS(
+ARTICULO       VARCHAR(20)NOT NULL,
+COD_FABRICANTE INTEGER(3) NOT NULL,
+PESO           INTEGER(3) NOT NULL ,
+CATEGORIA      VARCHAR(10) NOT NULL,
+PRECIO_VENTA   INTEGER(4),
+PRECIO_COSTO   INTEGER(4),
+EXISTENCIAS    INTEGER(5)
+)ENGINE=INNODB;
+
+INSERT INTO ARTICULOS VALUES ('Macarrones',20, 1, 'Primera',100,98,120);
+INSERT INTO ARTICULOS VALUES ('Tallarines',20, 2, 'Primera',120,100,100);
+INSERT INTO ARTICULOS VALUES ('Tallarines',20, 1, 'Segunda',99,50,100);
+INSERT INTO ARTICULOS VALUES ('Macarrones',20, 1, 'Tercera',80,50,100);
+INSERT INTO ARTICULOS VALUES ('Atun',10, 3, 'Primera',200,150,220);
+INSERT INTO ARTICULOS VALUES ('Atun',10, 3, 'Segunda',150,100,220);
+INSERT INTO ARTICULOS VALUES ('Atun',10, 3, 'Tercera',100,50,220);
+INSERT INTO ARTICULOS VALUES ('Sardinillas',10, 1,
+ 'Primera',250,200,200);
+INSERT INTO ARTICULOS VALUES ('Sardinillas',10, 1,
+ 'Segunda',200,160,200);
+INSERT INTO ARTICULOS VALUES ('Sardinillas',10, 1, 
+'Tercera',100,150,220);
+INSERT INTO ARTICULOS VALUES ('Mejillones',10, 1, 
+'Tercera',90,50,200);
+INSERT INTO ARTICULOS VALUES ('Mejillones',10, 1, 
+'Primera',200,150,300);
+
+
+
+INSERT INTO ARTICULOS VALUES ('Macarrones',25, 1, 'Primera',90,68,150);
+INSERT INTO ARTICULOS VALUES ('Tallarines',25, 1, 'Primera',100,90,100);
+INSERT INTO ARTICULOS VALUES ('Fideos',25, 1, 'Segunda',75,50,100);
+INSERT INTO ARTICULOS VALUES ('Fideos',25, 1, 'Primera',100,80,100);
+INSERT INTO ARTICULOS VALUES ('Galletas Cuadradas',
+15, 1, 'Primera',100,80,100);
+INSERT INTO ARTICULOS VALUES ('Galletas Cuadradas',
+15, 1, 'Segunda',70,50,100);
+INSERT INTO ARTICULOS VALUES ('Galletas Cuadradas',
+15, 1, 'Tercera',50,40,100);
+INSERT INTO ARTICULOS VALUES ('Barquillos',15, 1, 'Primera',100,80,100);
+INSERT INTO ARTICULOS VALUES ('Barquillos',15, 1, 'Segunda',100,80,100);
+INSERT INTO ARTICULOS VALUES ('Canutillos',15, 2, 'Primera',170,150,110);
+INSERT INTO ARTICULOS VALUES ('Canutillos',15, 2, 'Segunda',120,150,110);
+INSERT INTO ARTICULOS VALUES ('Leche entera',30, 1, 
+'Primera',110,100,300);
+INSERT INTO ARTICULOS VALUES ('Leche desnat.',30, 1, 
+'Primera',120,100,300);
+INSERT INTO ARTICULOS VALUES ('Leche semi.',30, 1, 
+'Primera',130,110,300);
+INSERT INTO ARTICULOS VALUES ('Leche entera',30, 2, 
+'Primera',210,200,300);
+INSERT INTO ARTICULOS VALUES ('Leche desnat.',30, 2, 
+'Primera',220,200,300);
+INSERT INTO ARTICULOS VALUES ('Leche semi.',30, 2, 
+'Primera',230,210,300);
+INSERT INTO ARTICULOS VALUES ('Mantequilla',30, 1, 
+'Primera',510,400,200);
+INSERT INTO ARTICULOS VALUES ('Mantequilla',30, 1, 
+'Segunda',450,340,200);
+
+
+CREATE TABLE FABRICANTES(
+COD_FABRICANTE INTEGER(3) NOT NULL,
+NOMBRE         VARCHAR(15), 
+PAIS           VARCHAR(15)
+)ENGINE=INNODB;
+
+INSERT INTO FABRICANTES VALUES(10,'CALVO', 'ESPANA');
+INSERT INTO FABRICANTES VALUES(15,'LU', 'BELGICA');
+INSERT INTO FABRICANTES VALUES(20,'BARILLA', 'ITALIA');
+INSERT INTO FABRICANTES VALUES(25,'GALLO', 'ESPANA');
+INSERT INTO FABRICANTES VALUES(30,'PRESIDENT', 'FRANCIA');
+
+CREATE TABLE TIENDAS(
+NIF       VARCHAR(10) NOT NULL,
+NOMBRE    VARCHAR(20),
+DIRECCION VARCHAR(20),
+POBLACION VARCHAR(20),
+PROVINCIA VARCHAR(20),
+CODPOSTAL INTEGER(5) 
+)ENGINE=INNODB;
+
+INSERT INTO TIENDAS VALUES('1111-A','Almacenes Perez', 'C/Toledo, 20','Siguenza','GUADALAJARA',19104); 
+INSERT INTO TIENDAS VALUES('5555-B','La gacela', 'C/Santander Rios, 45','Azuqueca','GUADALAJARA', 19209);
+INSERT INTO TIENDAS VALUES('2222-A','Comestibles Rodolfo', 
+'C/ del Val s/n', 'Alcala de Henares','MADRID',28804);
+INSERT INTO TIENDAS VALUES('4444-A','La Pasta Gansa', 'C/Alcala, 2',
+ 'Ajalvir','MADRID', 28765);
+ INSERT INTO TIENDAS VALUES('3333-N','Ultramarinos Montse',
+  'Avda. Pio 10', 'Toledo','TOLEDO',45100);
+INSERT INTO TIENDAS VALUES('4141-B','Todo Toledo',
+ 'C/Avila 24', 'Talavera','TOLEDO',45199);
+
+
+CREATE TABLE PEDIDOS(
+NIF               VARCHAR(10) NOT NULL,
+ARTICULO          VARCHAR(20) NOT NULL,
+COD_FABRICANTE    INTEGER(3) NOT NULL,
+PESO              INTEGER(3) NOT NULL,
+CATEGORIA         VARCHAR(10) NOT NULL,
+FECHA_PEDIDO      DATE NOT NULL,
+UNIDADES_PEDIDAS  INTEGER(4)
+)ENGINE=INNODB;
+
+INSERT INTO PEDIDOS VALUES ('5555-B','Macarrones',20, 1, 'Primera',
+DATE_FORMAT(STR_TO_DATE('18/02/1999','%d/%m/%Y'),'%Y-%m-%d'), 30);
+INSERT INTO PEDIDOS VALUES ('5555-B','Atun',10, 3, 'Primera',
+DATE_FORMAT(STR_TO_DATE('21/02/1999','%d/%m/%Y'),'%Y-%m-%d'), 10);
+INSERT INTO PEDIDOS VALUES ('5555-B','Atun',10, 3, 'Segunda',
+DATE_FORMAT(STR_TO_DATE('11/03/1999','%d/%m/%Y'),'%Y-%m-%d'), 4);
+INSERT INTO PEDIDOS VALUES ('5555-B','Sardinillas',10, 1, 'Segunda', 
+DATE_FORMAT(STR_TO_DATE('11/03/1999','%d/%m/%Y'),'%Y-%m-%d'), 10);
+INSERT INTO PEDIDOS VALUES ('5555-B','Macarrones',25, 1, 'Primera',
+DATE_FORMAT(STR_TO_DATE('14/04/1999','%d/%m/%Y'),'%Y-%m-%d'), 12);
+INSERT INTO PEDIDOS VALUES ('5555-B','Fideos',25, 1, 'Segunda', 
+DATE_FORMAT(STR_TO_DATE('18/05/1999','%d/%m/%Y'),'%Y-%m-%d'), 24);
+INSERT INTO PEDIDOS VALUES ('5555-B','Fideos',25, 1, 'Segunda', 
+DATE_FORMAT(STR_TO_DATE('19/05/1999','%d/%m/%Y'),'%Y-%m-%d'),20);
+INSERT INTO PEDIDOS VALUES ('5555-B','Galletas Cuadradas',
+15, 1, 'Segunda', DATE_FORMAT(STR_TO_DATE('20/06/1999','%d/%m/%Y'),'%Y-%m-%d'),15);
+INSERT INTO PEDIDOS VALUES ('1111-A','Barquillos',15, 1, 'Primera',
+DATE_FORMAT(STR_TO_DATE('20/02/1999','%d/%m/%Y'),'%Y-%m-%d'),10);
+INSERT INTO PEDIDOS VALUES ('1111-A','Canutillos',15, 2, 'Segunda',
+DATE_FORMAT(STR_TO_DATE('10/04/1999','%d/%m/%Y'),'%Y-%m-%d'),12);
+INSERT INTO PEDIDOS VALUES ('1111-A','Leche semi.',30, 1, 'Primera',
+DATE_FORMAT(STR_TO_DATE('24/06/1999','%d/%m/%Y'),'%Y-%m-%d'),5);
+INSERT INTO PEDIDOS VALUES ('1111-A','Leche semi.',30, 2, 'Primera',
+DATE_FORMAT(STR_TO_DATE('04/07/1999','%d/%m/%Y'),'%Y-%m-%d'),11);
+INSERT INTO PEDIDOS VALUES ('1111-A','Mantequilla',30, 1, 'Primera', 
+DATE_FORMAT(STR_TO_DATE('10/07/1999','%d/%m/%Y'),'%Y-%m-%d'),10);
+INSERT INTO PEDIDOS VALUES ('4141-B','Macarrones',20, 1, 'Primera',
+DATE_FORMAT(STR_TO_DATE('16/04/1999','%d/%m/%Y'),'%Y-%m-%d'),30);
+INSERT INTO PEDIDOS VALUES ('4141-B','Atun',10, 3, 'Primera',
+DATE_FORMAT(STR_TO_DATE('21/06/1999','%d/%m/%Y'),'%Y-%m-%d'),10);
+INSERT INTO PEDIDOS VALUES ('4141-B','Atun',10, 3, 'Segunda',
+DATE_FORMAT(STR_TO_DATE('12/08/1999','%d/%m/%Y'),'%Y-%m-%d'),9);
+INSERT INTO PEDIDOS VALUES ('2222-A','Sardinillas',10, 1,
+ 'Segunda', DATE_FORMAT(STR_TO_DATE('12/08/1999','%d/%m/%Y'),'%Y-%m-%d'),20);
+INSERT INTO PEDIDOS VALUES ('2222-A','Sardinillas',10, 1, 
+'Tercera', DATE_FORMAT(STR_TO_DATE('12/08/1999','%d/%m/%Y'),'%Y-%m-%d'),22);
+INSERT INTO PEDIDOS VALUES('2222-A','Mejillones',10,1,
+ 'Primera',CURRENT_DATE(),1000);
+INSERT INTO PEDIDOS VALUES ('3333-A','Macarrones',25, 1,
+ 'Primera',DATE_FORMAT(STR_TO_DATE('10/11/1999','%d/%m/%Y'),'%Y-%m-%d'),8);
+INSERT INTO PEDIDOS VALUES ('3333-A','Tallarines',25, 1, 
+'Primera', DATE_FORMAT(STR_TO_DATE('12/11/1999','%d/%m/%Y'),'%Y-%m-%d'),9);
+ INSERT INTO PEDIDOS VALUES ('3333-A','Fideos',25, 1, 
+'Primera', DATE_FORMAT(STR_TO_DATE('15/11/1999','%d/%m/%Y'),'%Y-%m-%d'),11);
+ INSERT INTO PEDIDOS VALUES ('3333-A','Galletas Cuadradas',
+15, 1, 'Primera', DATE_FORMAT(STR_TO_DATE('20/11/1999','%d/%m/%Y'),'%Y-%m-%d'),6);
+INSERT INTO PEDIDOS VALUES ('3333-A','Barquillos',15, 1, 
+'Segunda', DATE_FORMAT(STR_TO_DATE('20/11/1999','%d/%m/%Y'),'%Y-%m-%d'),40);
+ INSERT INTO PEDIDOS VALUES ('3333-A','Canutillos',15, 2, 
+'Segunda', DATE_FORMAT(STR_TO_DATE('20/11/1999','%d/%m/%Y'),'%Y-%m-%d'),10);
+
+
+
+CREATE TABLE VENTAS(
+NIF                VARCHAR(10) NOT NULL,
+ARTICULO           VARCHAR(20) NOT NULL,
+COD_FABRICANTE     INTEGER(3) NOT NULL,
+PESO               INTEGER(3) NOT NULL,
+CATEGORIA          VARCHAR(10) NOT NULL,
+FECHA_VENTA        DATE NOT NULL,
+UNIDADES_VENDIDAS  INTEGER(4)
+)ENGINE=INNODB;
+
+
+INSERT INTO VENTAS VALUES ('5555-B','Macarrones',20, 1, 'Primera',
+DATE_FORMAT(STR_TO_DATE('19/02/1999','%d/%m/%Y'),'%Y-%m-%d'),5);
+INSERT INTO VENTAS VALUES ('5555-B','Atun',10, 3, 'Primera',
+DATE_FORMAT(STR_TO_DATE('19/02/1999','%d/%m/%Y'),'%Y-%m-%d'),6);
+INSERT INTO VENTAS VALUES ('5555-B','Atun',10, 3, 'Segunda',
+DATE_FORMAT(STR_TO_DATE('20/03/1999','%d/%m/%Y'),'%Y-%m-%d'),15);
+INSERT INTO VENTAS VALUES ('5555-B','Sardinillas',10, 1, 'Segunda', 
+DATE_FORMAT(STR_TO_DATE('20/03/1999','%d/%m/%Y'),'%Y-%m-%d'),8);
+INSERT INTO VENTAS VALUES ('5555-B','Macarrones',25, 1, 'Primera',
+DATE_FORMAT(STR_TO_DATE('17/04/1999','%d/%m/%Y'),'%Y-%m-%d'),2);
+INSERT INTO VENTAS VALUES ('5555-B','Fideos',25, 1, 'Segunda', 
+DATE_FORMAT(STR_TO_DATE('18/05/1999','%d/%m/%Y'),'%Y-%m-%d'),14);
+INSERT INTO VENTAS VALUES ('5555-B','Leche semi.',30, 1, 'Primera',
+DATE_FORMAT(STR_TO_DATE('24/06/1999','%d/%m/%Y'),'%Y-%m-%d'),5);
+INSERT INTO VENTAS VALUES ('2222-A','Galletas Cuadradas',
+15, 1, 'Segunda', DATE_FORMAT(STR_TO_DATE('20/06/1999','%d/%m/%Y'),'%Y-%m-%d'),5);
+INSERT INTO VENTAS VALUES ('2222-A','Barquillos',15, 1, 'Primera',
+DATE_FORMAT(STR_TO_DATE('20/02/1999','%d/%m/%Y'),'%Y-%m-%d'),6);
+INSERT INTO VENTAS VALUES ('2222-A','Canutillos',15, 2, 'Segunda',
+DATE_FORMAT(STR_TO_DATE('10/06/1999','%d/%m/%Y'),'%Y-%m-%d'),2);
+INSERT INTO VENTAS VALUES ('2222-A','Sardinillas',10, 1,
+ 'Segunda', DATE_FORMAT(STR_TO_DATE('15/08/1999','%d/%m/%Y'),'%Y-%m-%d'),5);
+INSERT INTO VENTAS VALUES ('2222-A','Sardinillas',10, 1, 
+'Tercera', DATE_FORMAT(STR_TO_DATE('15/08/1999','%d/%m/%Y'),'%Y-%m-%d'),5);
+INSERT INTO VENTAS VALUES ('3333-A','Leche semi.',30, 2, 'Primera',
+DATE_FORMAT(STR_TO_DATE('06/07/1999','%d/%m/%Y'),'%Y-%m-%d'),11);
+INSERT INTO VENTAS VALUES ('3333-A','Mantequilla',30, 1, 'Primera', 
+DATE_FORMAT(STR_TO_DATE('16/07/1999','%d/%m/%Y'),'%Y-%m-%d'),10);
+INSERT INTO VENTAS VALUES ('3333-A','Macarrones',20, 1, 'Primera',
+DATE_FORMAT(STR_TO_DATE('26/04/1999','%d/%m/%Y'),'%Y-%m-%d'),30);
+INSERT INTO VENTAS VALUES ('3333-A','Atun',10, 3, 'Primera',
+DATE_FORMAT(STR_TO_DATE('26/04/1999','%d/%m/%Y'),'%Y-%m-%d'),10);
+INSERT INTO VENTAS VALUES ('3333-A','Barquillos',15, 1, 
+'Segunda', DATE_FORMAT(STR_TO_DATE('25/11/1999','%d/%m/%Y'),'%Y-%m-%d'),4);
+ INSERT INTO VENTAS VALUES ('3333-A','Canutillos',15, 2, 
+'Segunda', DATE_FORMAT(STR_TO_DATE('25/11/1999','%d/%m/%Y'),'%Y-%m-%d'),4);
+INSERT INTO VENTAS VALUES ('4141-B','Atun',10, 3, 'Segunda',
+DATE_FORMAT(STR_TO_DATE('12/08/1999','%d/%m/%Y'),'%Y-%m-%d'),2);
+INSERT INTO VENTAS VALUES ('4141-B','Macarrones',25, 1,
+ 'Primera',DATE_FORMAT(STR_TO_DATE('10/11/1999','%d/%m/%Y'),'%Y-%m-%d'),2);
+INSERT INTO VENTAS VALUES ('4141-B','Tallarines',25, 1, 
+'Primera', DATE_FORMAT(STR_TO_DATE('11/11/1999','%d/%m/%Y'),'%Y-%m-%d'),3);
+INSERT INTO VENTAS VALUES ('4141-B','Canutillos',15, 2, 
+'Segunda', DATE_FORMAT(STR_TO_DATE('11/11/1999','%d/%m/%Y'),'%Y-%m-%d'),8);
+
+commit;
+
+# *************** FIN *******************************
+
+
+

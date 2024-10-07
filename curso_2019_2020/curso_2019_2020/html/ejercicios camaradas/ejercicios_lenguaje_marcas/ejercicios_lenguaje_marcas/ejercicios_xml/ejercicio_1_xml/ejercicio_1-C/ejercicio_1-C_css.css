@@ -1,0 +1,19 @@
+biblioteca, autor, libro,fecha {
+	display:block;
+}
+
+biblioteca{
+	border:1px solid black;
+	margin-left:2%;
+	margin-right:2%;
+}
+
+
+ libro{
+border:2px solid black;
+background-color:#5BDC2E;
+	margin-bottom:2%;	
+	margin-top:2%;
+	margin-left:2%;
+	margin-right:2%;
+}

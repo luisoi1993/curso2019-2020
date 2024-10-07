@@ -1,0 +1,12 @@
+biblioteca, autor, libro,fecha {
+	display:block;
+}
+
+biblioteca{
+	border:1px solid black;
+}
+
+fecha{
+	border-bottom:1px solid black;
+	margin-bottom:1%;
+}
